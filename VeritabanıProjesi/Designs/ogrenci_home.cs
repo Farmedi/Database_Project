@@ -31,5 +31,11 @@ namespace VeritabanıProjesi
             ders_secimi dsecimi = new ders_secimi();
             dsecimi.ShowDialog();
         }
+
+        private void ogrenci_bilgileri_Click(object sender, EventArgs e)
+        {
+            ogrenci_bilgileri obilgi = new ogrenci_bilgileri();
+            obilgi.ShowDialog();
+        }
     }
 }

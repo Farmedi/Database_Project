@@ -26,7 +26,9 @@ namespace VeritabanıProjesi
 
         private void ogretmen_login_Click(object sender, EventArgs e)
         {
-            
+            ogretmen_home og = new ogretmen_home();
+            og.Show();
+            this.Hide();
         }
 
         private void Ogrenci_login_Click(object sender, EventArgs e)

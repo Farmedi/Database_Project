@@ -32,6 +32,7 @@ namespace VeritabanıProjesi
             this.duyurular = new System.Windows.Forms.DataGridView();
             this.ders_programi = new System.Windows.Forms.Button();
             this.ders_secimi = new System.Windows.Forms.Button();
+            this.ogrenci_bilgileri = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.duyurular)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +58,7 @@ namespace VeritabanıProjesi
             // 
             // ders_secimi
             // 
-            this.ders_secimi.Location = new System.Drawing.Point(529, 327);
+            this.ders_secimi.Location = new System.Drawing.Point(534, 327);
             this.ders_secimi.Name = "ders_secimi";
             this.ders_secimi.Size = new System.Drawing.Size(211, 48);
             this.ders_secimi.TabIndex = 2;
@@ -65,11 +66,22 @@ namespace VeritabanıProjesi
             this.ders_secimi.UseVisualStyleBackColor = true;
             this.ders_secimi.Click += new System.EventHandler(this.ders_secimi_Click);
             // 
+            // ogrenci_bilgileri
+            // 
+            this.ogrenci_bilgileri.Location = new System.Drawing.Point(301, 327);
+            this.ogrenci_bilgileri.Name = "ogrenci_bilgileri";
+            this.ogrenci_bilgileri.Size = new System.Drawing.Size(211, 48);
+            this.ogrenci_bilgileri.TabIndex = 3;
+            this.ogrenci_bilgileri.Text = "Student Info";
+            this.ogrenci_bilgileri.UseVisualStyleBackColor = true;
+            this.ogrenci_bilgileri.Click += new System.EventHandler(this.ogrenci_bilgileri_Click);
+            // 
             // ogrenci_home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ogrenci_bilgileri);
             this.Controls.Add(this.ders_secimi);
             this.Controls.Add(this.ders_programi);
             this.Controls.Add(this.duyurular);
@@ -86,5 +98,6 @@ namespace VeritabanıProjesi
         private System.Windows.Forms.DataGridView duyurular;
         private System.Windows.Forms.Button ders_programi;
         private System.Windows.Forms.Button ders_secimi;
+        private System.Windows.Forms.Button ogrenci_bilgileri;
     }
 }
