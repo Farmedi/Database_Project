@@ -42,26 +42,28 @@ namespace VeritabanıProjesi
             this.duyurular.Name = "duyurular";
             this.duyurular.RowHeadersWidth = 51;
             this.duyurular.RowTemplate.Height = 29;
-            this.duyurular.Size = new System.Drawing.Size(754, 181);
+            this.duyurular.Size = new System.Drawing.Size(754, 253);
             this.duyurular.TabIndex = 0;
             // 
             // ders_programi
             // 
-            this.ders_programi.Location = new System.Drawing.Point(70, 289);
+            this.ders_programi.Location = new System.Drawing.Point(69, 327);
             this.ders_programi.Name = "ders_programi";
             this.ders_programi.Size = new System.Drawing.Size(211, 48);
             this.ders_programi.TabIndex = 1;
             this.ders_programi.Text = "Weekly Schedule";
             this.ders_programi.UseVisualStyleBackColor = true;
+            this.ders_programi.Click += new System.EventHandler(this.ders_programi_Click);
             // 
             // ders_secimi
             // 
-            this.ders_secimi.Location = new System.Drawing.Point(527, 289);
+            this.ders_secimi.Location = new System.Drawing.Point(529, 327);
             this.ders_secimi.Name = "ders_secimi";
             this.ders_secimi.Size = new System.Drawing.Size(211, 48);
             this.ders_secimi.TabIndex = 2;
             this.ders_secimi.Text = "Class Selection";
             this.ders_secimi.UseVisualStyleBackColor = true;
+            this.ders_secimi.Click += new System.EventHandler(this.ders_secimi_Click);
             // 
             // ogrenci_home
             // 

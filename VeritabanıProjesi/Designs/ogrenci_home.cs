@@ -19,5 +19,17 @@ namespace VeritabanıProjesi
         {
 
         }
+
+        private void ders_programi_Click(object sender, EventArgs e)
+        {
+            ders_programi dprogram = new ders_programi();
+            dprogram.ShowDialog();
+        }
+
+        private void ders_secimi_Click(object sender, EventArgs e)
+        {
+            ders_secimi dsecimi = new ders_secimi();
+            dsecimi.ShowDialog();
+        }
     }
 }
