@@ -1,7 +1,7 @@
 ﻿
-namespace VeritabanıProjesi.Designs
+namespace VeritabanıProjesi
 {
-    partial class Register
+    partial class Register_form
     {
         /// <summary>
         /// Required designer variable.
@@ -43,6 +43,10 @@ namespace VeritabanıProjesi.Designs
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_Register = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -160,17 +164,57 @@ namespace VeritabanıProjesi.Designs
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(658, 178);
+            this.label6.Location = new System.Drawing.Point(548, 99);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(50, 20);
             this.label6.TabIndex = 14;
             this.label6.Text = "label6";
             // 
-            // Register
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(548, 148);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(50, 20);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "label7";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(548, 194);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(50, 20);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "label8";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(548, 244);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(50, 20);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "label9";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(548, 283);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(58, 20);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "label10";
+            // 
+            // Register_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 553);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btn_Register);
             this.Controls.Add(this.textBox1);
@@ -185,7 +229,7 @@ namespace VeritabanıProjesi.Designs
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Register";
+            this.Name = "Register_form";
             this.Text = "Register";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -208,5 +252,9 @@ namespace VeritabanıProjesi.Designs
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btn_Register;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }

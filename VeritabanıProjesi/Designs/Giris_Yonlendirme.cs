@@ -31,12 +31,17 @@ namespace VeritabanıProjesi
 
         private void Ogrenci_login_Click(object sender, EventArgs e)
         {
-
+            ogrenci_home ogrenci = new ogrenci_home();
+            ogrenci.Show();
+            this.Hide();
         }
 
         private void Register_Click(object sender, EventArgs e)
         {
-           
+            Register_form reg = new Register_form();
+            reg.ShowDialog();
+            
+            
         }
     }
 }

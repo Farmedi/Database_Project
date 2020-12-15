@@ -6,20 +6,18 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace VeritabanıProjesi.Designs
+namespace VeritabanıProjesi
 {
-    public partial class Register : Form
+    public partial class ogrenci_home : Form
     {
-        public Register()
+        public ogrenci_home()
         {
             InitializeComponent();
         }
 
-       
-
-        private void btn_Register_Click(object sender, EventArgs e)
+        private void ogrenci_home_Load(object sender, EventArgs e)
         {
-            label1.Text = "asd";
+
         }
     }
 }
