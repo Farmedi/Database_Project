@@ -22,7 +22,7 @@ namespace VeritabanıProjesi
 
         private void back_to_home_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
         }
     }
 }

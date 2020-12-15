@@ -55,6 +55,7 @@ namespace VeritabanıProjesi
             this.course_management.TabIndex = 1;
             this.course_management.Text = "Course Management";
             this.course_management.UseVisualStyleBackColor = true;
+            this.course_management.Click += new System.EventHandler(this.course_management_Click);
             // 
             // student_info
             // 

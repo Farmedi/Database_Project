@@ -37,5 +37,11 @@ namespace VeritabanıProjesi
             teacher_info ti = new teacher_info();
             ti.ShowDialog();
         }
+
+        private void course_management_Click(object sender, EventArgs e)
+        {
+            manage_courses mc = new manage_courses();
+            mc.ShowDialog();
+        }
     }
 }

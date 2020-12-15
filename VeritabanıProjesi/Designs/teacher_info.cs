@@ -19,5 +19,11 @@ namespace VeritabanıProjesi
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            change_password cp = new change_password();
+            cp.ShowDialog();
+        }
     }
 }
