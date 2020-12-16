@@ -47,6 +47,7 @@ namespace VeritabanıProjesi
             this.ders_secim.RowTemplate.Height = 29;
             this.ders_secim.Size = new System.Drawing.Size(776, 353);
             this.ders_secim.TabIndex = 0;
+            this.ders_secim.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ders_secim_CellContentClick);
             // 
             // go_home
             // 

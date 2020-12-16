@@ -24,5 +24,10 @@ namespace VeritabanıProjesi
         {
             this.Close();
         }
+
+        private void ders_secim_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
