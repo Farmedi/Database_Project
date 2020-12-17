@@ -32,7 +32,7 @@ namespace VeritabanıProjesi
                 while (reader.Read())
                 {
                     announcements.Add(new duyurular(reader.GetString(0), reader.GetString(1), reader.GetString(2)));
-                    rtb_duyurular.Text += reader.GetString(0);
+                    
                 }
             }
             reader.Close();
@@ -42,7 +42,7 @@ namespace VeritabanıProjesi
                 rtb_duyurular.Text+="Date: "+dyr.tarih+"\n";
                 rtb_duyurular.Text += "From: " + dyr.yapan + "\n";
                 rtb_duyurular.Text += "" + dyr.duyuru + "\n";
-                rtb_duyurular.Text += "-----------------------------------------------------------------------------";
+                rtb_duyurular.Text += "-----------------------------------------------------------------------------\n";
             }
         }
 
