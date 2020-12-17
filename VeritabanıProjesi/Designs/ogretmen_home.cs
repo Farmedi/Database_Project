@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace VeritabanıProjesi
 {
@@ -17,16 +18,33 @@ namespace VeritabanıProjesi
 
         private void ogretmen_home_Load(object sender, EventArgs e)
         {
+            String str = "server = LAPTOP-1P0U4F0G; database=veritabanı_projesi;User Id=ftft;password=Hhft.1811asd159159159";
+            SqlConnection con = new SqlConnection(str);
+            string query = "select * from tbl_duyurular where duyuru_id=1";
+            SqlCommand cmd = new SqlCommand(query, con);
 
+            var announcements = new List<duyurular>();
+            con.Open();
+
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    announcements.Add(new duyurular(reader.GetString(0), reader.GetString(1), reader.GetString(2)));
+                    rtb_duyurular.Text += reader.GetString(0);
+                }
+            }
+            reader.Close();
+            con.Close();
+            foreach (duyurular dyr in announcements)
+            {
+                rtb_duyurular.Text+="Date: "+dyr.tarih+"\n";
+                rtb_duyurular.Text += "From: " + dyr.yapan + "\n";
+                rtb_duyurular.Text += "" + dyr.duyuru + "\n";
+                rtb_duyurular.Text += "-----------------------------------------------------------------------------";
+            }
         }
-
-
-
-
-
-
-
-
 
 
 
@@ -34,6 +52,7 @@ namespace VeritabanıProjesi
         {
             create_announcement ca = new create_announcement();
             ca.ShowDialog();
+            
         }
 
         private void create_course_Click(object sender, EventArgs e)
