@@ -33,8 +33,7 @@ namespace VeritabanıProjesi
             this.course_management = new System.Windows.Forms.Button();
             this.student_info = new System.Windows.Forms.Button();
             this.create_course = new System.Windows.Forms.Button();
-            this.ogretmen_duyuru = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.ogretmen_duyuru)).BeginInit();
+            this.rtb_duyurular = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // create_announcement
@@ -77,22 +76,22 @@ namespace VeritabanıProjesi
             this.create_course.UseVisualStyleBackColor = true;
             this.create_course.Click += new System.EventHandler(this.create_course_Click);
             // 
-            // ogretmen_duyuru
+            // rtb_duyurular
             // 
-            this.ogretmen_duyuru.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ogretmen_duyuru.Location = new System.Drawing.Point(67, 34);
-            this.ogretmen_duyuru.Name = "ogretmen_duyuru";
-            this.ogretmen_duyuru.RowHeadersWidth = 51;
-            this.ogretmen_duyuru.RowTemplate.Height = 29;
-            this.ogretmen_duyuru.Size = new System.Drawing.Size(642, 188);
-            this.ogretmen_duyuru.TabIndex = 4;
+            this.rtb_duyurular.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.rtb_duyurular.Location = new System.Drawing.Point(67, 33);
+            this.rtb_duyurular.Name = "rtb_duyurular";
+            this.rtb_duyurular.ReadOnly = true;
+            this.rtb_duyurular.Size = new System.Drawing.Size(642, 196);
+            this.rtb_duyurular.TabIndex = 4;
+            this.rtb_duyurular.Text = "";
             // 
             // ogretmen_home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.ogretmen_duyuru);
+            this.Controls.Add(this.rtb_duyurular);
             this.Controls.Add(this.create_course);
             this.Controls.Add(this.student_info);
             this.Controls.Add(this.course_management);
@@ -100,7 +99,6 @@ namespace VeritabanıProjesi
             this.Name = "ogretmen_home";
             this.Text = "ogretmen_home";
             this.Load += new System.EventHandler(this.ogretmen_home_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ogretmen_duyuru)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -111,6 +109,6 @@ namespace VeritabanıProjesi
         private System.Windows.Forms.Button course_management;
         private System.Windows.Forms.Button student_info;
         private System.Windows.Forms.Button create_course;
-        private System.Windows.Forms.DataGridView ogretmen_duyuru;
+        private System.Windows.Forms.RichTextBox rtb_duyurular;
     }
 }

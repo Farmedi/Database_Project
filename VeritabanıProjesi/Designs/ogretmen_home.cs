@@ -20,6 +20,16 @@ namespace VeritabanıProjesi
 
         }
 
+
+
+
+
+
+
+
+
+
+
         private void create_announcement_Click(object sender, EventArgs e)
         {
             create_announcement ca = new create_announcement();
