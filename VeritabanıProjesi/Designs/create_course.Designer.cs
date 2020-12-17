@@ -40,6 +40,7 @@ namespace VeritabanıProjesi
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.lbl_error = new System.Windows.Forms.Label();
+            this.lbl_on_create = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -137,16 +138,26 @@ namespace VeritabanıProjesi
             // 
             this.lbl_error.AutoSize = true;
             this.lbl_error.ForeColor = System.Drawing.Color.Red;
-            this.lbl_error.Location = new System.Drawing.Point(55, 236);
+            this.lbl_error.Location = new System.Drawing.Point(55, 230);
             this.lbl_error.Name = "lbl_error";
             this.lbl_error.Size = new System.Drawing.Size(0, 20);
-            this.lbl_error.TabIndex = 11;
+            this.lbl_error.TabIndex = 21;
+            // 
+            // lbl_on_create
+            // 
+            this.lbl_on_create.AutoSize = true;
+            this.lbl_on_create.ForeColor = System.Drawing.Color.Lime;
+            this.lbl_on_create.Location = new System.Drawing.Point(391, 213);
+            this.lbl_on_create.Name = "lbl_on_create";
+            this.lbl_on_create.Size = new System.Drawing.Size(0, 20);
+            this.lbl_on_create.TabIndex = 22;
             // 
             // create_course
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(755, 481);
+            this.Controls.Add(this.lbl_on_create);
             this.Controls.Add(this.lbl_error);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.comboBox1);
@@ -178,5 +189,6 @@ namespace VeritabanıProjesi
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lbl_error;
+        private System.Windows.Forms.Label lbl_on_create;
     }
 }

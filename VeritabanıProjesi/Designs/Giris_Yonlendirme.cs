@@ -105,13 +105,13 @@ namespace VeritabanıProjesi
             else
             {
                 con.Close();
-                query = "Select * from tbl_ogrenci where email = '"+email+"'";
+                query = "Select * from tbl_ogrenci where email = '" + email + "'";
                 SqlCommand cm = new SqlCommand(query, con);
                 con.Open();
 
                 try
                 {
-                    using (dr1= cmd.ExecuteReader())
+                    using (dr1 = cmd.ExecuteReader())
                     {
                         while (dr1.Read())
                         {
@@ -134,23 +134,13 @@ namespace VeritabanıProjesi
 
 
 
-                
+
                 ogrenci_home ogrenci = new ogrenci_home();
                 ogrenci.Show();
                 this.Hide();
 
             }
-            
-           
 
-
-
-
-
-
-
-
-           
         }
 
         private void Register_Click(object sender, EventArgs e)

@@ -141,25 +141,9 @@ namespace VeritabanıProjesi
 
         }
 
+        private void Register_form_Load(object sender, EventArgs e)
+        {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        }
     }
 }
