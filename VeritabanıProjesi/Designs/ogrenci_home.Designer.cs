@@ -29,23 +29,12 @@ namespace VeritabanıProjesi
         /// </summary>
         private void InitializeComponent()
         {
-            this.duyurular = new System.Windows.Forms.DataGridView();
             this.ders_programi = new System.Windows.Forms.Button();
             this.ders_secimi = new System.Windows.Forms.Button();
             this.ogrenci_bilgileri = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.duyurular)).BeginInit();
+            this.duyurular = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
-            // 
-            // duyurular
-            // 
-            this.duyurular.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.duyurular.Location = new System.Drawing.Point(22, 30);
-            this.duyurular.Name = "duyurular";
-            this.duyurular.RowHeadersWidth = 51;
-            this.duyurular.RowTemplate.Height = 29;
-            this.duyurular.Size = new System.Drawing.Size(754, 253);
-            this.duyurular.TabIndex = 0;
             // 
             // ders_programi
             // 
@@ -86,31 +75,40 @@ namespace VeritabanıProjesi
             this.label1.TabIndex = 4;
             this.label1.Text = "label1";
             // 
+            // duyurular
+            // 
+            this.duyurular.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.duyurular.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.duyurular.Location = new System.Drawing.Point(69, 37);
+            this.duyurular.Name = "duyurular";
+            this.duyurular.ReadOnly = true;
+            this.duyurular.Size = new System.Drawing.Size(676, 219);
+            this.duyurular.TabIndex = 5;
+            this.duyurular.Text = "";
+            // 
             // ogrenci_home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.duyurular);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ogrenci_bilgileri);
             this.Controls.Add(this.ders_secimi);
             this.Controls.Add(this.ders_programi);
-            this.Controls.Add(this.duyurular);
             this.Name = "ogrenci_home";
             this.Text = "ogrenci_home";
             this.Load += new System.EventHandler(this.ogrenci_home_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.duyurular)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView duyurular;
         private System.Windows.Forms.Button ders_programi;
         private System.Windows.Forms.Button ders_secimi;
         private System.Windows.Forms.Button ogrenci_bilgileri;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RichTextBox duyurular;
     }
 }

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Threading;
 
 namespace VeritabanıProjesi
 {
@@ -24,6 +25,8 @@ namespace VeritabanıProjesi
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+            var t = new Thread(() => Application.Run(new ogretmen_home()));
+            t.Start();
         }
 
         private void button1_Click(object sender, EventArgs e)

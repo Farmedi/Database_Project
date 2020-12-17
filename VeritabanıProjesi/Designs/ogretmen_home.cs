@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Threading;
+
 
 namespace VeritabanıProjesi
 {
@@ -20,7 +22,7 @@ namespace VeritabanıProjesi
         {
             String str = "server = LAPTOP-1P0U4F0G; database=veritabanı_projesi;User Id=ftft;password=Hhft.1811asd159159159";
             SqlConnection con = new SqlConnection(str);
-            string query = "select * from tbl_duyurular where duyuru_id=1";
+            string query = "select * from tbl_duyurular where duyuru_id=1 order by tarih asc";
             SqlCommand cmd = new SqlCommand(query, con);
 
             var announcements = new List<duyurular>();
@@ -32,7 +34,7 @@ namespace VeritabanıProjesi
                 while (reader.Read())
                 {
                     announcements.Add(new duyurular(reader.GetString(0), reader.GetString(1), reader.GetString(2)));
-                    
+                   
                 }
             }
             reader.Close();
@@ -50,21 +52,25 @@ namespace VeritabanıProjesi
 
         private void create_announcement_Click(object sender, EventArgs e)
         {
-            create_announcement ca = new create_announcement();
-            ca.ShowDialog();
+            this.Close();
+            var t = new Thread(() => Application.Run(new create_announcement()));
+            t.Start();
             
+
         }
 
         private void create_course_Click(object sender, EventArgs e)
         {
             create_course cc = new create_course();
             cc.ShowDialog();
+            
         }
 
         private void student_info_Click(object sender, EventArgs e)
         {
             teacher_info ti = new teacher_info();
             ti.ShowDialog();
+            
         }
 
         private void course_management_Click(object sender, EventArgs e)

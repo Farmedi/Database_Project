@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Threading;
 
 namespace VeritabanıProjesi
 {
@@ -73,9 +74,10 @@ namespace VeritabanıProjesi
                     con.Close();
                 }
 
-                ogretmen_home ogretmen = new ogretmen_home();
-                ogretmen.Show();
-                this.Hide();
+                
+                this.Close();
+                var t = new Thread(() => Application.Run(new ogretmen_home()));
+                t.Start();
 
             }
 
@@ -133,11 +135,10 @@ namespace VeritabanıProjesi
 
 
 
+                this.Close();
 
-
-                ogrenci_home ogrenci = new ogrenci_home();
-                ogrenci.Show();
-                this.Hide();
+                var t = new Thread(() => Application.Run(new ogrenci_home()));
+                t.Start();
 
             }
 
