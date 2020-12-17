@@ -33,6 +33,7 @@ namespace VeritabanıProjesi
             this.ders_programi = new System.Windows.Forms.Button();
             this.ders_secimi = new System.Windows.Forms.Button();
             this.ogrenci_bilgileri = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.duyurular)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,11 +77,21 @@ namespace VeritabanıProjesi
             this.ogrenci_bilgileri.UseVisualStyleBackColor = true;
             this.ogrenci_bilgileri.Click += new System.EventHandler(this.ogrenci_bilgileri_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(433, 402);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "label1";
+            // 
             // ogrenci_home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ogrenci_bilgileri);
             this.Controls.Add(this.ders_secimi);
             this.Controls.Add(this.ders_programi);
@@ -90,6 +101,7 @@ namespace VeritabanıProjesi
             this.Load += new System.EventHandler(this.ogrenci_home_Load);
             ((System.ComponentModel.ISupportInitialize)(this.duyurular)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -99,5 +111,6 @@ namespace VeritabanıProjesi
         private System.Windows.Forms.Button ders_programi;
         private System.Windows.Forms.Button ders_secimi;
         private System.Windows.Forms.Button ogrenci_bilgileri;
+        private System.Windows.Forms.Label label1;
     }
 }

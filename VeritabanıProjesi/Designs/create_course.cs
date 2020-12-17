@@ -24,5 +24,15 @@ namespace VeritabanıProjesi
         {
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string fakulte_adi = tb_fakulte.Text.Trim();
+            string bolum_adi = tb_bolum.Text.Trim();
+            string class_name = tb_ders_adi.Text.Trim();
+
+
+
+        }
     }
 }

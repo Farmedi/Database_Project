@@ -17,7 +17,7 @@ namespace VeritabanıProjesi
 
         private void ogrenci_home_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void ders_programi_Click(object sender, EventArgs e)

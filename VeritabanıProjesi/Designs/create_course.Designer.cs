@@ -34,11 +34,12 @@ namespace VeritabanıProjesi
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_fakulte = new System.Windows.Forms.TextBox();
+            this.tb_bolum = new System.Windows.Forms.TextBox();
+            this.tb_ders_adi = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.lbl_error = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -87,26 +88,26 @@ namespace VeritabanıProjesi
             this.label4.TabIndex = 5;
             this.label4.Text = "Date:";
             // 
-            // textBox1
+            // tb_fakulte
             // 
-            this.textBox1.Location = new System.Drawing.Point(179, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 27);
-            this.textBox1.TabIndex = 6;
+            this.tb_fakulte.Location = new System.Drawing.Point(179, 38);
+            this.tb_fakulte.Name = "tb_fakulte";
+            this.tb_fakulte.Size = new System.Drawing.Size(176, 27);
+            this.tb_fakulte.TabIndex = 6;
             // 
-            // textBox2
+            // tb_bolum
             // 
-            this.textBox2.Location = new System.Drawing.Point(179, 86);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(176, 27);
-            this.textBox2.TabIndex = 7;
+            this.tb_bolum.Location = new System.Drawing.Point(179, 86);
+            this.tb_bolum.Name = "tb_bolum";
+            this.tb_bolum.Size = new System.Drawing.Size(176, 27);
+            this.tb_bolum.TabIndex = 7;
             // 
-            // textBox3
+            // tb_ders_adi
             // 
-            this.textBox3.Location = new System.Drawing.Point(179, 127);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(176, 27);
-            this.textBox3.TabIndex = 8;
+            this.tb_ders_adi.Location = new System.Drawing.Point(179, 127);
+            this.tb_ders_adi.Name = "tb_ders_adi";
+            this.tb_ders_adi.Size = new System.Drawing.Size(176, 27);
+            this.tb_ders_adi.TabIndex = 8;
             // 
             // comboBox1
             // 
@@ -124,23 +125,34 @@ namespace VeritabanıProjesi
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(390, 136);
+            this.button2.Location = new System.Drawing.Point(391, 38);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(293, 61);
+            this.button2.Size = new System.Drawing.Size(293, 159);
             this.button2.TabIndex = 10;
             this.button2.Text = "Create Course";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // lbl_error
+            // 
+            this.lbl_error.AutoSize = true;
+            this.lbl_error.ForeColor = System.Drawing.Color.Red;
+            this.lbl_error.Location = new System.Drawing.Point(55, 236);
+            this.lbl_error.Name = "lbl_error";
+            this.lbl_error.Size = new System.Drawing.Size(0, 20);
+            this.lbl_error.TabIndex = 11;
             // 
             // create_course
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(755, 481);
+            this.Controls.Add(this.lbl_error);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_ders_adi);
+            this.Controls.Add(this.tb_bolum);
+            this.Controls.Add(this.tb_fakulte);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -160,10 +172,11 @@ namespace VeritabanıProjesi
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_fakulte;
+        private System.Windows.Forms.TextBox tb_bolum;
+        private System.Windows.Forms.TextBox tb_ders_adi;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lbl_error;
     }
 }
