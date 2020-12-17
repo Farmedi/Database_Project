@@ -17,25 +17,37 @@ namespace VeritabanıProjesi
             InitializeComponent();
         }
 
-       
+
 
         private void btn_Register_Click(object sender, EventArgs e)
         {
             bool error = false;
             int index_of_at = eb_email.Text.IndexOf('@');
-            string sonu = eb_email.Text.Substring(index_of_at + 1, eb_email.Text.Length );
+            string sonu = "";
+            if (index_of_at > 0)
+            {
+                sonu = eb_email.Text.Substring(index_of_at + 1, eb_email.Text.Length - index_of_at - 1);
 
-            if (tb_name.Text.Length==0)
+            }
+
+            lbl_email_error.Text = "";
+            lbl_name_error.Text = "";
+            lbl_pw_error.Text = "";
+            lbl_role.Text = "";
+            lbl_surname_error.Text = "";
+            lbl_exception.Text = "";
+
+            if (tb_name.Text.Length == 0)
             {
                 lbl_name_error.Text = "*Name is required.";
                 error = true;
             }
-            if (tb_surname.Text.Length==0)
+            if (tb_surname.Text.Length == 0)
             {
                 lbl_surname_error.Text = "*Surname is required.";
                 error = true;
             }
-            if (eb_email.Text.Length==0 || index_of_at == -1 || !sonu.Contains(".com") )
+            if (eb_email.Text.Length == 0 || index_of_at == -1 || !sonu.Contains(".com"))
             {
                 lbl_email_error.Text = "*Email is invalid or left blank.";
                 error = true;
@@ -51,7 +63,7 @@ namespace VeritabanıProjesi
                 lbl_pw_error.Text = "*Passwords don't match.";
                 error = true;
             }
-            if (!rb_student.Checked && !rb_teacher.Checked )
+            if (!rb_student.Checked && !rb_teacher.Checked)
             {
                 lbl_role.Text = "*Can't be left unchecked.";
                 error = true;
@@ -74,56 +86,80 @@ namespace VeritabanıProjesi
 
                 if (rb_student.Checked)
                 {
-                     query = "Insert into tbl_ogrenci(isim,soyisim,email,pw,roleid) values(" + name + "," + surname + "," + email + "," + password + ",1)";
+                    try
+                    {
+                        using (SqlCommand cmd = new SqlCommand("ekle_ogrenci", con))
+                        {
+                            cmd.CommandType = CommandType.StoredProcedure;
+
+                            cmd.Parameters.Add("@isim", SqlDbType.VarChar).Value = name;
+                            cmd.Parameters.Add("@soyisim", SqlDbType.VarChar).Value = surname;
+                            cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = email;
+                            cmd.Parameters.Add("@pw", SqlDbType.VarChar).Value = password;
+                            cmd.Parameters.Add("@roleid", SqlDbType.VarChar).Value = 2;
+
+                            con.Open();
+                            cmd.ExecuteNonQuery();
+                            this.Close();
+                        }
+                    }
+                    catch (Exception ec)
+                    {
+
+                        lbl_exception.Text = ec.Message;
+                    }
                 }
                 if (rb_teacher.Checked)
                 {
-                    //string query = "Insert into tbl_ogretmen(isim,soyisim,email,pw,roleid) values(" + name + "," + surname + "," + email + "," + password + ",1)";
-                    
-                    using (SqlCommand cmd = new SqlCommand("ekle_ogretmen", con))
+
+
+                    try
                     {
-                        cmd.CommandType = CommandType.StoredProcedure;
+                        using (SqlCommand cmd = new SqlCommand("ekle_ogretmen", con))
+                        {
+                            cmd.CommandType = CommandType.StoredProcedure;
 
-                        cmd.Parameters.Add("@isim", SqlDbType.VarChar).Value = name;
-                        cmd.Parameters.Add("@soyisim", SqlDbType.VarChar).Value = surname;
-                        cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = email;
-                        cmd.Parameters.Add("@pw", SqlDbType.VarChar).Value = password;
-                        cmd.Parameters.Add("@roleid", SqlDbType.VarChar).Value = 1;
+                            cmd.Parameters.Add("@isim", SqlDbType.VarChar).Value = name;
+                            cmd.Parameters.Add("@soyisim", SqlDbType.VarChar).Value = surname;
+                            cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = email;
+                            cmd.Parameters.Add("@pw", SqlDbType.VarChar).Value = password;
+                            cmd.Parameters.Add("@roleid", SqlDbType.VarChar).Value = 1;
 
-                        con.Open();
-                        cmd.ExecuteNonQuery();
+                            con.Open();
+                            cmd.ExecuteNonQuery();
+                            this.Close();
+                        }
+                    }
+                    catch (Exception ec)
+                    {
+                        lbl_exception.Text = ec.Message;
+                        
                     }
                 }
-                /* string query = "Insert into"
-                 
-                 SqlCommand cmd = new SqlCommand(query, con);
-                 con.Open();
-
-                 con.Close();
-
-                 */
+                
             }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            this.Close();
-            
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

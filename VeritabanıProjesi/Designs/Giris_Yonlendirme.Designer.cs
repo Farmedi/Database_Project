@@ -31,15 +31,16 @@
             this.ogretmen_login = new System.Windows.Forms.Button();
             this.Ogrenci_login = new System.Windows.Forms.Button();
             this.Register = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_email = new System.Windows.Forms.TextBox();
+            this.tb_pw = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lbl_login_error = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ogretmen_login
             // 
-            this.ogretmen_login.Location = new System.Drawing.Point(394, 262);
+            this.ogretmen_login.Location = new System.Drawing.Point(394, 329);
             this.ogretmen_login.Name = "ogretmen_login";
             this.ogretmen_login.Size = new System.Drawing.Size(175, 63);
             this.ogretmen_login.TabIndex = 0;
@@ -49,7 +50,7 @@
             // 
             // Ogrenci_login
             // 
-            this.Ogrenci_login.Location = new System.Drawing.Point(190, 262);
+            this.Ogrenci_login.Location = new System.Drawing.Point(190, 329);
             this.Ogrenci_login.Name = "Ogrenci_login";
             this.Ogrenci_login.Size = new System.Drawing.Size(175, 63);
             this.Ogrenci_login.TabIndex = 1;
@@ -59,7 +60,7 @@
             // 
             // Register
             // 
-            this.Register.Location = new System.Drawing.Point(190, 346);
+            this.Register.Location = new System.Drawing.Point(190, 398);
             this.Register.Name = "Register";
             this.Register.Size = new System.Drawing.Size(379, 40);
             this.Register.TabIndex = 2;
@@ -67,22 +68,22 @@
             this.Register.UseVisualStyleBackColor = true;
             this.Register.Click += new System.EventHandler(this.Register_Click);
             // 
-            // textBox1
+            // tb_email
             // 
-            this.textBox1.Location = new System.Drawing.Point(295, 167);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(274, 27);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_email.Location = new System.Drawing.Point(295, 167);
+            this.tb_email.Name = "tb_email";
+            this.tb_email.Size = new System.Drawing.Size(274, 27);
+            this.tb_email.TabIndex = 3;
+            this.tb_email.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // tb_pw
             // 
-            this.textBox2.Location = new System.Drawing.Point(298, 218);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(271, 27);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.tb_pw.Location = new System.Drawing.Point(298, 218);
+            this.tb_pw.Name = "tb_pw";
+            this.tb_pw.Size = new System.Drawing.Size(271, 27);
+            this.tb_pw.TabIndex = 4;
+            this.tb_pw.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_pw.UseSystemPasswordChar = true;
             // 
             // label1
             // 
@@ -102,15 +103,25 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Password: ";
             // 
+            // lbl_login_error
+            // 
+            this.lbl_login_error.AutoSize = true;
+            this.lbl_login_error.ForeColor = System.Drawing.Color.Red;
+            this.lbl_login_error.Location = new System.Drawing.Point(242, 263);
+            this.lbl_login_error.Name = "lbl_login_error";
+            this.lbl_login_error.Size = new System.Drawing.Size(0, 20);
+            this.lbl_login_error.TabIndex = 7;
+            // 
             // Giris_Yonlendirme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_login_error);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_pw);
+            this.Controls.Add(this.tb_email);
             this.Controls.Add(this.Register);
             this.Controls.Add(this.Ogrenci_login);
             this.Controls.Add(this.ogretmen_login);
@@ -126,10 +137,12 @@
         private System.Windows.Forms.Button ogretmen_login;
         private System.Windows.Forms.Button Ogrenci_login;
         private System.Windows.Forms.Button Register;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_email;
+        private System.Windows.Forms.TextBox tb_pww;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tb_pw;
+        private System.Windows.Forms.Label lbl_login_error;
     }
 }
 

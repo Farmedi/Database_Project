@@ -47,6 +47,7 @@ namespace VeritabanıProjesi
             this.lbl_email_error = new System.Windows.Forms.Label();
             this.lbl_pw_error = new System.Windows.Forms.Label();
             this.lbl_role = new System.Windows.Forms.Label();
+            this.lbl_exception = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -97,7 +98,7 @@ namespace VeritabanıProjesi
             // rb_teacher
             // 
             this.rb_teacher.AutoSize = true;
-            this.rb_teacher.Location = new System.Drawing.Point(386, 335);
+            this.rb_teacher.Location = new System.Drawing.Point(387, 373);
             this.rb_teacher.Name = "rb_teacher";
             this.rb_teacher.Size = new System.Drawing.Size(81, 24);
             this.rb_teacher.TabIndex = 5;
@@ -108,7 +109,7 @@ namespace VeritabanıProjesi
             // rb_student
             // 
             this.rb_student.AutoSize = true;
-            this.rb_student.Location = new System.Drawing.Point(240, 335);
+            this.rb_student.Location = new System.Drawing.Point(240, 373);
             this.rb_student.Name = "rb_student";
             this.rb_student.Size = new System.Drawing.Size(81, 24);
             this.rb_student.TabIndex = 6;
@@ -118,7 +119,7 @@ namespace VeritabanıProjesi
             // 
             // tb_cpw
             // 
-            this.tb_cpw.Location = new System.Drawing.Point(327, 276);
+            this.tb_cpw.Location = new System.Drawing.Point(327, 280);
             this.tb_cpw.Name = "tb_cpw";
             this.tb_cpw.Size = new System.Drawing.Size(215, 27);
             this.tb_cpw.TabIndex = 7;
@@ -153,7 +154,7 @@ namespace VeritabanıProjesi
             // 
             // btn_Register
             // 
-            this.btn_Register.Location = new System.Drawing.Point(183, 374);
+            this.btn_Register.Location = new System.Drawing.Point(182, 403);
             this.btn_Register.Name = "btn_Register";
             this.btn_Register.Size = new System.Drawing.Size(359, 47);
             this.btn_Register.TabIndex = 13;
@@ -164,6 +165,7 @@ namespace VeritabanıProjesi
             // lbl_name_error
             // 
             this.lbl_name_error.AutoSize = true;
+            this.lbl_name_error.ForeColor = System.Drawing.Color.Red;
             this.lbl_name_error.Location = new System.Drawing.Point(548, 99);
             this.lbl_name_error.Name = "lbl_name_error";
             this.lbl_name_error.Size = new System.Drawing.Size(0, 20);
@@ -172,6 +174,7 @@ namespace VeritabanıProjesi
             // lbl_surname_error
             // 
             this.lbl_surname_error.AutoSize = true;
+            this.lbl_surname_error.ForeColor = System.Drawing.Color.Red;
             this.lbl_surname_error.Location = new System.Drawing.Point(548, 148);
             this.lbl_surname_error.Name = "lbl_surname_error";
             this.lbl_surname_error.Size = new System.Drawing.Size(0, 20);
@@ -180,6 +183,7 @@ namespace VeritabanıProjesi
             // lbl_email_error
             // 
             this.lbl_email_error.AutoSize = true;
+            this.lbl_email_error.ForeColor = System.Drawing.Color.Red;
             this.lbl_email_error.Location = new System.Drawing.Point(548, 194);
             this.lbl_email_error.Name = "lbl_email_error";
             this.lbl_email_error.Size = new System.Drawing.Size(0, 20);
@@ -188,7 +192,9 @@ namespace VeritabanıProjesi
             // lbl_pw_error
             // 
             this.lbl_pw_error.AutoSize = true;
-            this.lbl_pw_error.Location = new System.Drawing.Point(548, 244);
+            this.lbl_pw_error.BackColor = System.Drawing.SystemColors.Control;
+            this.lbl_pw_error.ForeColor = System.Drawing.Color.Red;
+            this.lbl_pw_error.Location = new System.Drawing.Point(240, 324);
             this.lbl_pw_error.Name = "lbl_pw_error";
             this.lbl_pw_error.Size = new System.Drawing.Size(0, 20);
             this.lbl_pw_error.TabIndex = 17;
@@ -201,11 +207,21 @@ namespace VeritabanıProjesi
             this.lbl_role.Size = new System.Drawing.Size(0, 20);
             this.lbl_role.TabIndex = 18;
             // 
+            // lbl_exception
+            // 
+            this.lbl_exception.AutoSize = true;
+            this.lbl_exception.ForeColor = System.Drawing.Color.Red;
+            this.lbl_exception.Location = new System.Drawing.Point(182, 463);
+            this.lbl_exception.Name = "lbl_exception";
+            this.lbl_exception.Size = new System.Drawing.Size(0, 20);
+            this.lbl_exception.TabIndex = 19;
+            // 
             // Register_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 553);
+            this.Controls.Add(this.lbl_exception);
             this.Controls.Add(this.lbl_role);
             this.Controls.Add(this.lbl_pw_error);
             this.Controls.Add(this.lbl_email_error);
@@ -251,5 +267,6 @@ namespace VeritabanıProjesi
         private System.Windows.Forms.Label lbl_email_error;
         private System.Windows.Forms.Label lbl_pw_error;
         private System.Windows.Forms.Label lbl_role;
+        private System.Windows.Forms.Label lbl_exception;
     }
 }
