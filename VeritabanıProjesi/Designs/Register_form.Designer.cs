@@ -34,19 +34,19 @@ namespace VeritabanıProjesi
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.rb_teacher = new System.Windows.Forms.RadioButton();
+            this.rb_student = new System.Windows.Forms.RadioButton();
+            this.tb_cpw = new System.Windows.Forms.MaskedTextBox();
+            this.tb_pw = new System.Windows.Forms.MaskedTextBox();
+            this.tb_surname = new System.Windows.Forms.TextBox();
+            this.eb_email = new System.Windows.Forms.TextBox();
+            this.tb_name = new System.Windows.Forms.TextBox();
             this.btn_Register = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbl_name_error = new System.Windows.Forms.Label();
+            this.lbl_surname_error = new System.Windows.Forms.Label();
+            this.lbl_email_error = new System.Windows.Forms.Label();
+            this.lbl_pw_error = new System.Windows.Forms.Label();
+            this.lbl_role = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -94,62 +94,62 @@ namespace VeritabanıProjesi
             this.label5.TabIndex = 4;
             this.label5.Text = "Confirm Password";
             // 
-            // radioButton1
+            // rb_teacher
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(386, 335);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(81, 24);
-            this.radioButton1.TabIndex = 5;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Teacher";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rb_teacher.AutoSize = true;
+            this.rb_teacher.Location = new System.Drawing.Point(386, 335);
+            this.rb_teacher.Name = "rb_teacher";
+            this.rb_teacher.Size = new System.Drawing.Size(81, 24);
+            this.rb_teacher.TabIndex = 5;
+            this.rb_teacher.TabStop = true;
+            this.rb_teacher.Text = "Teacher";
+            this.rb_teacher.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rb_student
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(240, 335);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(81, 24);
-            this.radioButton2.TabIndex = 6;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Student";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rb_student.AutoSize = true;
+            this.rb_student.Location = new System.Drawing.Point(240, 335);
+            this.rb_student.Name = "rb_student";
+            this.rb_student.Size = new System.Drawing.Size(81, 24);
+            this.rb_student.TabIndex = 6;
+            this.rb_student.TabStop = true;
+            this.rb_student.Text = "Student";
+            this.rb_student.UseVisualStyleBackColor = true;
             // 
-            // maskedTextBox1
+            // tb_cpw
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(327, 276);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(215, 27);
-            this.maskedTextBox1.TabIndex = 7;
+            this.tb_cpw.Location = new System.Drawing.Point(327, 276);
+            this.tb_cpw.Name = "tb_cpw";
+            this.tb_cpw.Size = new System.Drawing.Size(215, 27);
+            this.tb_cpw.TabIndex = 7;
             // 
-            // maskedTextBox2
+            // tb_pw
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(327, 237);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(215, 27);
-            this.maskedTextBox2.TabIndex = 8;
+            this.tb_pw.Location = new System.Drawing.Point(327, 237);
+            this.tb_pw.Name = "tb_pw";
+            this.tb_pw.Size = new System.Drawing.Size(215, 27);
+            this.tb_pw.TabIndex = 8;
             // 
-            // textBox2
+            // tb_surname
             // 
-            this.textBox2.Location = new System.Drawing.Point(305, 141);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(237, 27);
-            this.textBox2.TabIndex = 10;
+            this.tb_surname.Location = new System.Drawing.Point(305, 141);
+            this.tb_surname.Name = "tb_surname";
+            this.tb_surname.Size = new System.Drawing.Size(237, 27);
+            this.tb_surname.TabIndex = 10;
             // 
-            // textBox3
+            // eb_email
             // 
-            this.textBox3.Location = new System.Drawing.Point(305, 191);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(237, 27);
-            this.textBox3.TabIndex = 11;
+            this.eb_email.Location = new System.Drawing.Point(305, 191);
+            this.eb_email.Name = "eb_email";
+            this.eb_email.Size = new System.Drawing.Size(237, 27);
+            this.eb_email.TabIndex = 11;
             // 
-            // textBox1
+            // tb_name
             // 
-            this.textBox1.Location = new System.Drawing.Point(305, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(237, 27);
-            this.textBox1.TabIndex = 12;
+            this.tb_name.Location = new System.Drawing.Point(305, 92);
+            this.tb_name.Name = "tb_name";
+            this.tb_name.Size = new System.Drawing.Size(237, 27);
+            this.tb_name.TabIndex = 12;
             // 
             // btn_Register
             // 
@@ -161,69 +161,64 @@ namespace VeritabanıProjesi
             this.btn_Register.UseVisualStyleBackColor = true;
             this.btn_Register.Click += new System.EventHandler(this.btn_Register_Click);
             // 
-            // label6
+            // lbl_name_error
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(548, 99);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 20);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "label6";
+            this.lbl_name_error.AutoSize = true;
+            this.lbl_name_error.Location = new System.Drawing.Point(548, 99);
+            this.lbl_name_error.Name = "lbl_name_error";
+            this.lbl_name_error.Size = new System.Drawing.Size(0, 20);
+            this.lbl_name_error.TabIndex = 14;
             // 
-            // label7
+            // lbl_surname_error
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(548, 148);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 20);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "label7";
+            this.lbl_surname_error.AutoSize = true;
+            this.lbl_surname_error.Location = new System.Drawing.Point(548, 148);
+            this.lbl_surname_error.Name = "lbl_surname_error";
+            this.lbl_surname_error.Size = new System.Drawing.Size(0, 20);
+            this.lbl_surname_error.TabIndex = 15;
             // 
-            // label8
+            // lbl_email_error
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(548, 194);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(50, 20);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "label8";
+            this.lbl_email_error.AutoSize = true;
+            this.lbl_email_error.Location = new System.Drawing.Point(548, 194);
+            this.lbl_email_error.Name = "lbl_email_error";
+            this.lbl_email_error.Size = new System.Drawing.Size(0, 20);
+            this.lbl_email_error.TabIndex = 16;
             // 
-            // label9
+            // lbl_pw_error
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(548, 244);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 20);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "label9";
+            this.lbl_pw_error.AutoSize = true;
+            this.lbl_pw_error.Location = new System.Drawing.Point(548, 244);
+            this.lbl_pw_error.Name = "lbl_pw_error";
+            this.lbl_pw_error.Size = new System.Drawing.Size(0, 20);
+            this.lbl_pw_error.TabIndex = 17;
             // 
-            // label10
+            // lbl_role
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(548, 283);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(58, 20);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "label10";
+            this.lbl_role.AutoSize = true;
+            this.lbl_role.Location = new System.Drawing.Point(482, 337);
+            this.lbl_role.Name = "lbl_role";
+            this.lbl_role.Size = new System.Drawing.Size(0, 20);
+            this.lbl_role.TabIndex = 18;
             // 
             // Register_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 553);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lbl_role);
+            this.Controls.Add(this.lbl_pw_error);
+            this.Controls.Add(this.lbl_email_error);
+            this.Controls.Add(this.lbl_surname_error);
+            this.Controls.Add(this.lbl_name_error);
             this.Controls.Add(this.btn_Register);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.tb_name);
+            this.Controls.Add(this.eb_email);
+            this.Controls.Add(this.tb_surname);
+            this.Controls.Add(this.tb_pw);
+            this.Controls.Add(this.tb_cpw);
+            this.Controls.Add(this.rb_student);
+            this.Controls.Add(this.rb_teacher);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -243,18 +238,18 @@ namespace VeritabanıProjesi
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RadioButton rb_teacher;
+        private System.Windows.Forms.RadioButton rb_student;
+        private System.Windows.Forms.MaskedTextBox tb_cpw;
+        private System.Windows.Forms.MaskedTextBox tb_pw;
+        private System.Windows.Forms.TextBox tb_surname;
+        private System.Windows.Forms.TextBox eb_email;
+        private System.Windows.Forms.TextBox tb_name;
         private System.Windows.Forms.Button btn_Register;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbl_name_error;
+        private System.Windows.Forms.Label lbl_surname_error;
+        private System.Windows.Forms.Label lbl_email_error;
+        private System.Windows.Forms.Label lbl_pw_error;
+        private System.Windows.Forms.Label lbl_role;
     }
 }
