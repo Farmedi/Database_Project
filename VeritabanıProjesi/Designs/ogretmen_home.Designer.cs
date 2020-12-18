@@ -34,6 +34,7 @@ namespace VeritabanıProjesi
             this.student_info = new System.Windows.Forms.Button();
             this.create_course = new System.Windows.Forms.Button();
             this.rtb_duyurular = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // create_announcement
@@ -86,11 +87,21 @@ namespace VeritabanıProjesi
             this.rtb_duyurular.TabIndex = 4;
             this.rtb_duyurular.Text = "";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(459, 421);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 20);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "label1";
+            // 
             // ogretmen_home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.rtb_duyurular);
             this.Controls.Add(this.create_course);
             this.Controls.Add(this.student_info);
@@ -100,6 +111,7 @@ namespace VeritabanıProjesi
             this.Text = "ogretmen_home";
             this.Load += new System.EventHandler(this.ogretmen_home_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -110,5 +122,6 @@ namespace VeritabanıProjesi
         private System.Windows.Forms.Button student_info;
         private System.Windows.Forms.Button create_course;
         private System.Windows.Forms.RichTextBox rtb_duyurular;
+        private System.Windows.Forms.Label label1;
     }
 }
