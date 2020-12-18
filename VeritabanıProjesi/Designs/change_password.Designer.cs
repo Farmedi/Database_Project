@@ -36,11 +36,13 @@ namespace VeritabanıProjesi
             this.tb_opw = new System.Windows.Forms.TextBox();
             this.tb_cpw = new System.Windows.Forms.TextBox();
             this.tb_pw = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_scs = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // pw_change
             // 
-            this.pw_change.Location = new System.Drawing.Point(2, 189);
+            this.pw_change.Location = new System.Drawing.Point(3, 236);
             this.pw_change.Name = "pw_change";
             this.pw_change.Size = new System.Drawing.Size(347, 47);
             this.pw_change.TabIndex = 0;
@@ -99,11 +101,31 @@ namespace VeritabanıProjesi
             this.tb_pw.TabIndex = 6;
             this.tb_pw.UseSystemPasswordChar = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(12, 148);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 20);
+            this.label1.TabIndex = 7;
+            // 
+            // lbl_scs
+            // 
+            this.lbl_scs.AutoSize = true;
+            this.lbl_scs.ForeColor = System.Drawing.Color.Lime;
+            this.lbl_scs.Location = new System.Drawing.Point(92, 286);
+            this.lbl_scs.Name = "lbl_scs";
+            this.lbl_scs.Size = new System.Drawing.Size(0, 20);
+            this.lbl_scs.TabIndex = 8;
+            // 
             // change_password
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(351, 409);
+            this.Controls.Add(this.lbl_scs);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.tb_pw);
             this.Controls.Add(this.tb_cpw);
             this.Controls.Add(this.tb_opw);
@@ -128,5 +150,7 @@ namespace VeritabanıProjesi
         private System.Windows.Forms.TextBox tb_opw;
         private System.Windows.Forms.TextBox tb_cpw;
         private System.Windows.Forms.TextBox tb_pw;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_scs;
     }
 }
