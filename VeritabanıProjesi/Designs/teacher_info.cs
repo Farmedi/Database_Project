@@ -27,7 +27,7 @@ namespace VeritabanıProjesi
 
             try
             {
-                using (SqlCommand cmd = new SqlCommand("return_email_from_teacher", con))
+                using (SqlCommand cmd = new SqlCommand("output_email", con))
                 {
                     con.Open();
                     cmd.CommandType = CommandType.StoredProcedure;

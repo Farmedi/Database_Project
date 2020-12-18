@@ -29,24 +29,24 @@ namespace VeritabanıProjesi
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.pw_change = new System.Windows.Forms.Button();
             this.OO = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_opw = new System.Windows.Forms.TextBox();
+            this.tb_cpw = new System.Windows.Forms.TextBox();
+            this.tb_pw = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // pw_change
             // 
-            this.button1.Location = new System.Drawing.Point(2, 189);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(347, 47);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.pw_change.Location = new System.Drawing.Point(2, 189);
+            this.pw_change.Name = "pw_change";
+            this.pw_change.Size = new System.Drawing.Size(347, 47);
+            this.pw_change.TabIndex = 0;
+            this.pw_change.Text = "Change Password!";
+            this.pw_change.UseVisualStyleBackColor = true;
+            this.pw_change.Click += new System.EventHandler(this.button1_Click);
             // 
             // OO
             // 
@@ -75,42 +75,42 @@ namespace VeritabanıProjesi
             this.label3.TabIndex = 3;
             this.label3.Text = "Confirm Password:";
             // 
-            // textBox1
+            // tb_opw
             // 
-            this.textBox1.Location = new System.Drawing.Point(149, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 27);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.UseSystemPasswordChar = true;
+            this.tb_opw.Location = new System.Drawing.Point(149, 34);
+            this.tb_opw.Name = "tb_opw";
+            this.tb_opw.Size = new System.Drawing.Size(176, 27);
+            this.tb_opw.TabIndex = 4;
+            this.tb_opw.UseSystemPasswordChar = true;
             // 
-            // textBox2
+            // tb_cpw
             // 
-            this.textBox2.Location = new System.Drawing.Point(148, 104);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(176, 27);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.tb_cpw.Location = new System.Drawing.Point(148, 104);
+            this.tb_cpw.Name = "tb_cpw";
+            this.tb_cpw.Size = new System.Drawing.Size(176, 27);
+            this.tb_cpw.TabIndex = 5;
+            this.tb_cpw.UseSystemPasswordChar = true;
             // 
-            // textBox3
+            // tb_pw
             // 
-            this.textBox3.Location = new System.Drawing.Point(149, 68);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(176, 27);
-            this.textBox3.TabIndex = 6;
-            this.textBox3.UseSystemPasswordChar = true;
+            this.tb_pw.Location = new System.Drawing.Point(149, 68);
+            this.tb_pw.Name = "tb_pw";
+            this.tb_pw.Size = new System.Drawing.Size(176, 27);
+            this.tb_pw.TabIndex = 6;
+            this.tb_pw.UseSystemPasswordChar = true;
             // 
             // change_password
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(351, 409);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_pw);
+            this.Controls.Add(this.tb_cpw);
+            this.Controls.Add(this.tb_opw);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.OO);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pw_change);
             this.Name = "change_password";
             this.Text = "change_password";
             this.Load += new System.EventHandler(this.change_password_Load);
@@ -121,12 +121,12 @@ namespace VeritabanıProjesi
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button pw_change;
         private System.Windows.Forms.Label OO;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_opw;
+        private System.Windows.Forms.TextBox tb_cpw;
+        private System.Windows.Forms.TextBox tb_pw;
     }
 }
