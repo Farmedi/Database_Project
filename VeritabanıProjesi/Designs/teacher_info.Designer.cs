@@ -73,8 +73,9 @@ namespace VeritabanıProjesi
             this.lbl_email.AutoSize = true;
             this.lbl_email.Location = new System.Drawing.Point(222, 217);
             this.lbl_email.Name = "lbl_email";
-            this.lbl_email.Size = new System.Drawing.Size(0, 20);
+            this.lbl_email.Size = new System.Drawing.Size(17, 20);
             this.lbl_email.TabIndex = 20;
+            this.lbl_email.Text = "a";
             // 
             // lbl_surname
             // 

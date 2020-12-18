@@ -34,15 +34,17 @@ namespace VeritabanıProjesi
 
                     SqlParameter parameter = new SqlParameter("@id", SqlDbType.Int);
                     parameter.Direction = ParameterDirection.Input;
-                    parameter.Value =Int32.Parse(Global.ID);
+                    parameter.Value =Convert.ToUInt32(Global.ID);
                     cmd.Parameters.Add(parameter);
                     //cmd.Parameters.Add("@id", SqlDbType.Int).Value = Global.ID;
 
-                    SqlParameter retval = cmd.Parameters.Add("@email", SqlDbType.VarChar);
+                    SqlParameter retval = cmd.Parameters.Add("@email", SqlDbType.VarChar,30);
                     retval.Direction = ParameterDirection.Output;
-                    
-                   // cmd.ExecuteNonQuery();
-                    lbl_email.Text = cmd.Parameters["@email"].Value.ToString();
+
+                     cmd.ExecuteNonQuery();
+                    string ret = string.Empty;
+                    ret = (string)cmd.Parameters["@email"].Value;
+                    lbl_email.Text = ret;
                     con.Close();
                 }
             }
