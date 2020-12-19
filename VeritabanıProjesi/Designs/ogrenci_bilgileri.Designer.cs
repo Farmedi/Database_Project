@@ -34,11 +34,11 @@ namespace VeritabanıProjesi
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbl_name = new System.Windows.Forms.Label();
+            this.lbl_surname = new System.Windows.Forms.Label();
+            this.lbl_email = new System.Windows.Forms.Label();
+            this.lbl_id = new System.Windows.Forms.Label();
+            this.lbl_class_taken = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -88,50 +88,45 @@ namespace VeritabanıProjesi
             this.label6.TabIndex = 5;
             this.label6.Text = "Classes Joined: ";
             // 
-            // label3
+            // lbl_name
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(197, 89);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 20);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "label3";
+            this.lbl_name.AutoSize = true;
+            this.lbl_name.Location = new System.Drawing.Point(197, 89);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(0, 20);
+            this.lbl_name.TabIndex = 6;
             // 
-            // label7
+            // lbl_surname
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(197, 132);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 20);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "label7";
+            this.lbl_surname.AutoSize = true;
+            this.lbl_surname.Location = new System.Drawing.Point(197, 132);
+            this.lbl_surname.Name = "lbl_surname";
+            this.lbl_surname.Size = new System.Drawing.Size(0, 20);
+            this.lbl_surname.TabIndex = 7;
             // 
-            // label8
+            // lbl_email
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(197, 174);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(50, 20);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "label8";
+            this.lbl_email.AutoSize = true;
+            this.lbl_email.Location = new System.Drawing.Point(197, 174);
+            this.lbl_email.Name = "lbl_email";
+            this.lbl_email.Size = new System.Drawing.Size(0, 20);
+            this.lbl_email.TabIndex = 8;
             // 
-            // label9
+            // lbl_id
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(197, 215);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 20);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "label9";
+            this.lbl_id.AutoSize = true;
+            this.lbl_id.Location = new System.Drawing.Point(197, 215);
+            this.lbl_id.Name = "lbl_id";
+            this.lbl_id.Size = new System.Drawing.Size(0, 20);
+            this.lbl_id.TabIndex = 9;
             // 
-            // label10
+            // lbl_class_taken
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(197, 256);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(58, 20);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "label10";
+            this.lbl_class_taken.AutoSize = true;
+            this.lbl_class_taken.Location = new System.Drawing.Point(197, 256);
+            this.lbl_class_taken.Name = "lbl_class_taken";
+            this.lbl_class_taken.Size = new System.Drawing.Size(0, 20);
+            this.lbl_class_taken.TabIndex = 10;
             // 
             // button1
             // 
@@ -159,11 +154,11 @@ namespace VeritabanıProjesi
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lbl_class_taken);
+            this.Controls.Add(this.lbl_id);
+            this.Controls.Add(this.lbl_email);
+            this.Controls.Add(this.lbl_surname);
+            this.Controls.Add(this.lbl_name);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -184,11 +179,11 @@ namespace VeritabanıProjesi
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbl_name;
+        private System.Windows.Forms.Label lbl_surname;
+        private System.Windows.Forms.Label lbl_email;
+        private System.Windows.Forms.Label lbl_id;
+        private System.Windows.Forms.Label lbl_class_taken;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }

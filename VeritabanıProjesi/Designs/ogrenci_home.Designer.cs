@@ -32,7 +32,6 @@ namespace VeritabanıProjesi
             this.ders_programi = new System.Windows.Forms.Button();
             this.ders_secimi = new System.Windows.Forms.Button();
             this.ogrenci_bilgileri = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.duyurular = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
@@ -66,15 +65,6 @@ namespace VeritabanıProjesi
             this.ogrenci_bilgileri.UseVisualStyleBackColor = true;
             this.ogrenci_bilgileri.Click += new System.EventHandler(this.ogrenci_bilgileri_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(433, 402);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
-            // 
             // duyurular
             // 
             this.duyurular.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -92,7 +82,6 @@ namespace VeritabanıProjesi
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.duyurular);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.ogrenci_bilgileri);
             this.Controls.Add(this.ders_secimi);
             this.Controls.Add(this.ders_programi);
@@ -100,7 +89,6 @@ namespace VeritabanıProjesi
             this.Text = "ogrenci_home";
             this.Load += new System.EventHandler(this.ogrenci_home_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -108,7 +96,6 @@ namespace VeritabanıProjesi
         private System.Windows.Forms.Button ders_programi;
         private System.Windows.Forms.Button ders_secimi;
         private System.Windows.Forms.Button ogrenci_bilgileri;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox duyurular;
     }
 }
