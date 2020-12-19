@@ -29,20 +29,9 @@ namespace VeritabanıProjesi
         /// </summary>
         private void InitializeComponent()
         {
-            this.dersprogrami = new System.Windows.Forms.DataGridView();
             this.back_to_home = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dersprogrami)).BeginInit();
+            this.rtb_dersler = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
-            // 
-            // dersprogrami
-            // 
-            this.dersprogrami.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dersprogrami.Location = new System.Drawing.Point(4, 2);
-            this.dersprogrami.Name = "dersprogrami";
-            this.dersprogrami.RowHeadersWidth = 51;
-            this.dersprogrami.RowTemplate.Height = 29;
-            this.dersprogrami.Size = new System.Drawing.Size(699, 351);
-            this.dersprogrami.TabIndex = 0;
             // 
             // back_to_home
             // 
@@ -54,23 +43,32 @@ namespace VeritabanıProjesi
             this.back_to_home.UseVisualStyleBackColor = true;
             this.back_to_home.Click += new System.EventHandler(this.back_to_home_Click);
             // 
+            // rtb_dersler
+            // 
+            this.rtb_dersler.BackColor = System.Drawing.Color.Orange;
+            this.rtb_dersler.Location = new System.Drawing.Point(25, 12);
+            this.rtb_dersler.Name = "rtb_dersler";
+            this.rtb_dersler.ReadOnly = true;
+            this.rtb_dersler.Size = new System.Drawing.Size(657, 333);
+            this.rtb_dersler.TabIndex = 2;
+            this.rtb_dersler.Text = "";
+            // 
             // ders_programi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(715, 419);
+            this.Controls.Add(this.rtb_dersler);
             this.Controls.Add(this.back_to_home);
-            this.Controls.Add(this.dersprogrami);
             this.Name = "ders_programi";
             this.Text = "ders_programi";
-            ((System.ComponentModel.ISupportInitialize)(this.dersprogrami)).EndInit();
+            this.Load += new System.EventHandler(this.ders_programi_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dersprogrami;
         private System.Windows.Forms.Button back_to_home;
+        private System.Windows.Forms.RichTextBox rtb_dersler;
     }
 }

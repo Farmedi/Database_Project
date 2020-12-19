@@ -9,6 +9,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text.RegularExpressions;
 
+
 namespace VeritabanıProjesi
 {
     public partial class ders_secimi : Form
@@ -128,13 +129,23 @@ namespace VeritabanıProjesi
 
         private void ders_secim_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            string ders_id =ders_secim.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
-           // ders_id = new string(ders_id.Where(c => char.IsDigit(c)).ToArray());
-            string newString = Regex.Replace(ders_id, "[^.0-9]", "");
+           
+            int ders_id =Convert.ToInt32( ders_secim.Rows[e.RowIndex].Cells[4].Value);
 
-            int id = int.Parse(newString.Trim());
-            MessageBox.Show(id.ToString());
+            String str = "server = LAPTOP-1P0U4F0G; database=veritabanı_projesi;User Id=ftft;password=Hhft.1811asd159159159";
+            SqlConnection con = new SqlConnection(str);
+
+            SqlCommand cmd = new SqlCommand("ders_programina_ekle", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@ogrenci_idd", SqlDbType.Int).Value=Global.ID;
+            cmd.Parameters.Add("@ders_idd",SqlDbType.Int).Value=ders_id;
             
+
+            con.Open();
+            cmd.ExecuteNonQuery();
+
+            
+
         }
 
     }
