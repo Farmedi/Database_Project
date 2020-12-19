@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace VeritabanıProjesi
 {
@@ -19,6 +20,7 @@ namespace VeritabanıProjesi
 
         private void ders_secimi_Load(object sender, EventArgs e)
         {
+            clm_add_class.Visible = false;
             String str = "server = LAPTOP-1P0U4F0G; database=veritabanı_projesi;User Id=ftft;password=Hhft.1811asd159159159";
             SqlConnection con = new SqlConnection(str);
             string query = "Select fakulte from tbl_dersler";
@@ -41,10 +43,10 @@ namespace VeritabanıProjesi
                 cmb_faculty.Items.Add(fakulte_adlari.ElementAt(index));
             }
 
-           
-            
 
-            
+
+
+
         }
 
         private void go_home_Click(object sender, EventArgs e)
@@ -60,8 +62,8 @@ namespace VeritabanıProjesi
         private void cmb_faculty_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            
-                
+            clm_add_class.Visible = false;
+
         }
         List<string> bolum_adlari = new List<string>();
         private void faculty_confirm_Click(object sender, EventArgs e)
@@ -70,15 +72,15 @@ namespace VeritabanıProjesi
             SqlConnection con = new SqlConnection(str);
 
             string query = "select bolum from tbl_dersler where fakulte='" + cmb_faculty.SelectedItem.ToString() + "'";
-           
+
             con.Open();
             SqlCommand cmd1 = new SqlCommand(query, con);
             SqlDataReader dr1 = cmd1.ExecuteReader();
 
             cmb_department.Items.Clear();
             bolum_adlari.Clear();
-            
-            
+
+
 
 
 
@@ -109,8 +111,8 @@ namespace VeritabanıProjesi
         {
             String str = "server = LAPTOP-1P0U4F0G; database=veritabanı_projesi;User Id=ftft;password=Hhft.1811asd159159159";
             SqlConnection con = new SqlConnection(str);
-            string ders_getir = "select ders_adi as Class, ogretmen_adi as Lecturer, ders_tarihi as Day from tbl_dersler where fakulte='" + cmb_faculty.SelectedItem.ToString() + "' and bolum='" + cmb_department.SelectedItem.ToString() + "'  ";
-            SqlCommand cmd = new SqlCommand(ders_getir,con);
+            string ders_getir = "select ders_adi as Class, ogretmen_adi as Lecturer, ders_tarihi as Day,id as ID from tbl_dersler where fakulte='" + cmb_faculty.SelectedItem.ToString() + "' and bolum='" + cmb_department.SelectedItem.ToString() + "'  ";
+            SqlCommand cmd = new SqlCommand(ders_getir, con);
 
             SqlDataAdapter adp = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -118,7 +120,22 @@ namespace VeritabanıProjesi
             con.Close();
 
             ders_secim.DataSource = dt;
+            clm_add_class.Visible = true;
+            clm_add_class.DisplayIndex = 4;
+            clm_add_class.Text = "Join!";
 
         }
+
+        private void ders_secim_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string ders_id =ders_secim.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+           // ders_id = new string(ders_id.Where(c => char.IsDigit(c)).ToArray());
+            string newString = Regex.Replace(ders_id, "[^.0-9]", "");
+
+            int id = int.Parse(newString.Trim());
+            MessageBox.Show(id.ToString());
+            
+        }
+
     }
 }

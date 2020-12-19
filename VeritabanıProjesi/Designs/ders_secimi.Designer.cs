@@ -30,6 +30,7 @@ namespace VeritabanıProjesi
         private void InitializeComponent()
         {
             this.ders_secim = new System.Windows.Forms.DataGridView();
+            this.clm_add_class = new System.Windows.Forms.DataGridViewButtonColumn();
             this.go_home = new System.Windows.Forms.Button();
             this.cmb_faculty = new System.Windows.Forms.ComboBox();
             this.cmb_department = new System.Windows.Forms.ComboBox();
@@ -42,7 +43,10 @@ namespace VeritabanıProjesi
             // 
             // ders_secim
             // 
+            this.ders_secim.AllowUserToAddRows = false;
             this.ders_secim.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ders_secim.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clm_add_class});
             this.ders_secim.Location = new System.Drawing.Point(42, 107);
             this.ders_secim.Name = "ders_secim";
             this.ders_secim.RowHeadersWidth = 51;
@@ -50,6 +54,16 @@ namespace VeritabanıProjesi
             this.ders_secim.Size = new System.Drawing.Size(776, 353);
             this.ders_secim.TabIndex = 0;
             this.ders_secim.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ders_secim_CellContentClick);
+            this.ders_secim.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ders_secim_CellDoubleClick);
+            // 
+            // clm_add_class
+            // 
+            this.clm_add_class.HeaderText = "Sign Up ";
+            this.clm_add_class.MinimumWidth = 6;
+            this.clm_add_class.Name = "clm_add_class";
+            this.clm_add_class.Text = "Join!";
+            this.clm_add_class.UseColumnTextForButtonValue = true;
+            this.clm_add_class.Width = 125;
             // 
             // go_home
             // 
@@ -148,5 +162,6 @@ namespace VeritabanıProjesi
         private System.Windows.Forms.Label department_selection;
         private System.Windows.Forms.Button faculty_confirm;
         private System.Windows.Forms.Button confirm_department;
+        private System.Windows.Forms.DataGridViewButtonColumn clm_add_class;
     }
 }
