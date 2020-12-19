@@ -35,6 +35,8 @@ namespace VeritabanıProjesi
             this.cmb_department = new System.Windows.Forms.ComboBox();
             this.faculty_selection = new System.Windows.Forms.Label();
             this.department_selection = new System.Windows.Forms.Label();
+            this.faculty_confirm = new System.Windows.Forms.Button();
+            this.confirm_department = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ders_secim)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,15 +64,16 @@ namespace VeritabanıProjesi
             // cmb_faculty
             // 
             this.cmb_faculty.FormattingEnabled = true;
-            this.cmb_faculty.Location = new System.Drawing.Point(374, 12);
+            this.cmb_faculty.Location = new System.Drawing.Point(118, 39);
             this.cmb_faculty.Name = "cmb_faculty";
             this.cmb_faculty.Size = new System.Drawing.Size(151, 28);
             this.cmb_faculty.TabIndex = 2;
+            this.cmb_faculty.SelectedIndexChanged += new System.EventHandler(this.cmb_faculty_SelectedIndexChanged);
             // 
             // cmb_department
             // 
             this.cmb_department.FormattingEnabled = true;
-            this.cmb_department.Location = new System.Drawing.Point(374, 60);
+            this.cmb_department.Location = new System.Drawing.Point(452, 39);
             this.cmb_department.Name = "cmb_department";
             this.cmb_department.Size = new System.Drawing.Size(151, 28);
             this.cmb_department.TabIndex = 3;
@@ -78,7 +81,7 @@ namespace VeritabanıProjesi
             // faculty_selection
             // 
             this.faculty_selection.AutoSize = true;
-            this.faculty_selection.Location = new System.Drawing.Point(274, 20);
+            this.faculty_selection.Location = new System.Drawing.Point(42, 47);
             this.faculty_selection.Name = "faculty_selection";
             this.faculty_selection.Size = new System.Drawing.Size(54, 20);
             this.faculty_selection.TabIndex = 4;
@@ -87,17 +90,39 @@ namespace VeritabanıProjesi
             // department_selection
             // 
             this.department_selection.AutoSize = true;
-            this.department_selection.Location = new System.Drawing.Point(274, 63);
+            this.department_selection.Location = new System.Drawing.Point(357, 47);
             this.department_selection.Name = "department_selection";
             this.department_selection.Size = new System.Drawing.Size(89, 20);
             this.department_selection.TabIndex = 5;
             this.department_selection.Text = "Department";
+            // 
+            // faculty_confirm
+            // 
+            this.faculty_confirm.Location = new System.Drawing.Point(176, 68);
+            this.faculty_confirm.Name = "faculty_confirm";
+            this.faculty_confirm.Size = new System.Drawing.Size(93, 35);
+            this.faculty_confirm.TabIndex = 6;
+            this.faculty_confirm.Text = "Confirm";
+            this.faculty_confirm.UseVisualStyleBackColor = true;
+            this.faculty_confirm.Click += new System.EventHandler(this.faculty_confirm_Click);
+            // 
+            // confirm_department
+            // 
+            this.confirm_department.Location = new System.Drawing.Point(513, 66);
+            this.confirm_department.Name = "confirm_department";
+            this.confirm_department.Size = new System.Drawing.Size(90, 35);
+            this.confirm_department.TabIndex = 7;
+            this.confirm_department.Text = "Confirm";
+            this.confirm_department.UseVisualStyleBackColor = true;
+            this.confirm_department.Click += new System.EventHandler(this.confirm_department_Click);
             // 
             // ders_secimi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(869, 521);
+            this.Controls.Add(this.confirm_department);
+            this.Controls.Add(this.faculty_confirm);
             this.Controls.Add(this.department_selection);
             this.Controls.Add(this.faculty_selection);
             this.Controls.Add(this.cmb_department);
@@ -121,5 +146,7 @@ namespace VeritabanıProjesi
         private System.Windows.Forms.ComboBox cmb_department;
         private System.Windows.Forms.Label faculty_selection;
         private System.Windows.Forms.Label department_selection;
+        private System.Windows.Forms.Button faculty_confirm;
+        private System.Windows.Forms.Button confirm_department;
     }
 }
