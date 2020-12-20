@@ -154,6 +154,7 @@ namespace VeritabanıProjesi
             // 
             // btn_Register
             // 
+            this.btn_Register.ForeColor = System.Drawing.Color.OrangeRed;
             this.btn_Register.Location = new System.Drawing.Point(182, 403);
             this.btn_Register.Name = "btn_Register";
             this.btn_Register.Size = new System.Drawing.Size(359, 47);
@@ -220,6 +221,7 @@ namespace VeritabanıProjesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Goldenrod;
             this.ClientSize = new System.Drawing.Size(736, 553);
             this.Controls.Add(this.lbl_exception);
             this.Controls.Add(this.lbl_role);
@@ -240,6 +242,7 @@ namespace VeritabanıProjesi
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.Cyan;
             this.Name = "Register_form";
             this.Text = "Register";
             this.Load += new System.EventHandler(this.Register_form_Load);

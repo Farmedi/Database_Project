@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Threading;
 
 namespace VeritabanıProjesi
 {
@@ -60,6 +61,26 @@ namespace VeritabanıProjesi
         {
             change_password cpw = new change_password();
             cpw.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            String str = "server = LAPTOP-1P0U4F0G; database=veritabanı_projesi;User Id=ftft;password=Hhft.1811asd159159159";
+            SqlConnection con = new SqlConnection(str);
+            con.Open();
+            SqlCommand cmd = new SqlCommand("delete_user", con);
+
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@id", SqlDbType.Int).Value =Convert.ToInt32( Global.ID);
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+            this.Close();
+            var t = new Thread(() => Application.Run(new Giris_Yonlendirme()));
+            t.Start();
+
+
         }
     }
 }

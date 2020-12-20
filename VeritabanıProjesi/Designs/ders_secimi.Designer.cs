@@ -44,14 +44,18 @@ namespace VeritabanıProjesi
             // ders_secim
             // 
             this.ders_secim.AllowUserToAddRows = false;
+            this.ders_secim.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.ders_secim.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.ders_secim.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.ders_secim.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ders_secim.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clm_add_class});
-            this.ders_secim.Location = new System.Drawing.Point(42, 107);
+            this.ders_secim.GridColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ders_secim.Location = new System.Drawing.Point(404, 107);
             this.ders_secim.Name = "ders_secim";
             this.ders_secim.RowHeadersWidth = 51;
             this.ders_secim.RowTemplate.Height = 29;
-            this.ders_secim.Size = new System.Drawing.Size(776, 353);
+            this.ders_secim.Size = new System.Drawing.Size(414, 353);
             this.ders_secim.TabIndex = 0;
             this.ders_secim.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ders_secim_CellContentClick);
             this.ders_secim.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ders_secim_CellDoubleClick);
@@ -63,11 +67,11 @@ namespace VeritabanıProjesi
             this.clm_add_class.Name = "clm_add_class";
             this.clm_add_class.Text = "Join!";
             this.clm_add_class.UseColumnTextForButtonValue = true;
-            this.clm_add_class.Width = 125;
+            this.clm_add_class.Width = 71;
             // 
             // go_home
             // 
-            this.go_home.Location = new System.Drawing.Point(294, 469);
+            this.go_home.Location = new System.Drawing.Point(566, 466);
             this.go_home.Name = "go_home";
             this.go_home.Size = new System.Drawing.Size(252, 56);
             this.go_home.TabIndex = 1;
@@ -78,7 +82,7 @@ namespace VeritabanıProjesi
             // cmb_faculty
             // 
             this.cmb_faculty.FormattingEnabled = true;
-            this.cmb_faculty.Location = new System.Drawing.Point(118, 39);
+            this.cmb_faculty.Location = new System.Drawing.Point(130, 107);
             this.cmb_faculty.Name = "cmb_faculty";
             this.cmb_faculty.Size = new System.Drawing.Size(151, 28);
             this.cmb_faculty.TabIndex = 2;
@@ -87,7 +91,7 @@ namespace VeritabanıProjesi
             // cmb_department
             // 
             this.cmb_department.FormattingEnabled = true;
-            this.cmb_department.Location = new System.Drawing.Point(452, 39);
+            this.cmb_department.Location = new System.Drawing.Point(130, 297);
             this.cmb_department.Name = "cmb_department";
             this.cmb_department.Size = new System.Drawing.Size(151, 28);
             this.cmb_department.TabIndex = 3;
@@ -95,7 +99,7 @@ namespace VeritabanıProjesi
             // faculty_selection
             // 
             this.faculty_selection.AutoSize = true;
-            this.faculty_selection.Location = new System.Drawing.Point(42, 47);
+            this.faculty_selection.Location = new System.Drawing.Point(54, 115);
             this.faculty_selection.Name = "faculty_selection";
             this.faculty_selection.Size = new System.Drawing.Size(54, 20);
             this.faculty_selection.TabIndex = 4;
@@ -104,7 +108,7 @@ namespace VeritabanıProjesi
             // department_selection
             // 
             this.department_selection.AutoSize = true;
-            this.department_selection.Location = new System.Drawing.Point(357, 47);
+            this.department_selection.Location = new System.Drawing.Point(35, 305);
             this.department_selection.Name = "department_selection";
             this.department_selection.Size = new System.Drawing.Size(89, 20);
             this.department_selection.TabIndex = 5;
@@ -112,7 +116,7 @@ namespace VeritabanıProjesi
             // 
             // faculty_confirm
             // 
-            this.faculty_confirm.Location = new System.Drawing.Point(176, 68);
+            this.faculty_confirm.Location = new System.Drawing.Point(188, 136);
             this.faculty_confirm.Name = "faculty_confirm";
             this.faculty_confirm.Size = new System.Drawing.Size(93, 35);
             this.faculty_confirm.TabIndex = 6;
@@ -122,7 +126,7 @@ namespace VeritabanıProjesi
             // 
             // confirm_department
             // 
-            this.confirm_department.Location = new System.Drawing.Point(513, 66);
+            this.confirm_department.Location = new System.Drawing.Point(191, 324);
             this.confirm_department.Name = "confirm_department";
             this.confirm_department.Size = new System.Drawing.Size(90, 35);
             this.confirm_department.TabIndex = 7;
@@ -134,6 +138,7 @@ namespace VeritabanıProjesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(869, 521);
             this.Controls.Add(this.confirm_department);
             this.Controls.Add(this.faculty_confirm);

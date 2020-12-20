@@ -82,9 +82,6 @@ namespace VeritabanıProjesi
             }
 
 
-
-            
-
         }
     }
 }

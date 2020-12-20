@@ -45,7 +45,7 @@ namespace VeritabanıProjesi
             // 
             // rtb_dersler
             // 
-            this.rtb_dersler.BackColor = System.Drawing.Color.Orange;
+            this.rtb_dersler.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.rtb_dersler.Location = new System.Drawing.Point(25, 12);
             this.rtb_dersler.Name = "rtb_dersler";
             this.rtb_dersler.ReadOnly = true;
@@ -57,6 +57,7 @@ namespace VeritabanıProjesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(715, 419);
             this.Controls.Add(this.rtb_dersler);
             this.Controls.Add(this.back_to_home);

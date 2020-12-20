@@ -42,6 +42,7 @@ namespace VeritabanıProjesi
             // 
             // pw_change
             // 
+            this.pw_change.ForeColor = System.Drawing.Color.Crimson;
             this.pw_change.Location = new System.Drawing.Point(3, 236);
             this.pw_change.Name = "pw_change";
             this.pw_change.Size = new System.Drawing.Size(347, 47);
@@ -123,6 +124,7 @@ namespace VeritabanıProjesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(351, 409);
             this.Controls.Add(this.lbl_scs);
             this.Controls.Add(this.label1);
@@ -133,6 +135,7 @@ namespace VeritabanıProjesi
             this.Controls.Add(this.label2);
             this.Controls.Add(this.OO);
             this.Controls.Add(this.pw_change);
+            this.ForeColor = System.Drawing.Color.Cyan;
             this.Name = "change_password";
             this.Text = "change_password";
             this.Load += new System.EventHandler(this.change_password_Load);

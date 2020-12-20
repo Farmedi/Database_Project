@@ -120,6 +120,7 @@ namespace VeritabanıProjesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lb_scs);
             this.Controls.Add(this.rb_teacher);
@@ -129,6 +130,7 @@ namespace VeritabanıProjesi
             this.Controls.Add(this.button1);
             this.Controls.Add(this.rtb_duyuru);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "create_announcement";
             this.Text = "create_announcement";
             this.Load += new System.EventHandler(this.create_announcement_Load);

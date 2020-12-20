@@ -18,6 +18,7 @@ namespace VeritabanıProjesi
 
         private void ogrenci_home_Load(object sender, EventArgs e)
         {
+            label1.Text = "Name: "+Global.name + " " + Global.surname + "\n ID: " + Global.ID;
             String str = "server = LAPTOP-1P0U4F0G; database=veritabanı_projesi;User Id=ftft;password=Hhft.1811asd159159159";
             SqlConnection con = new SqlConnection(str);
             string query = "select * from tbl_duyurular where duyuru_id=2 order by tarih asc";
