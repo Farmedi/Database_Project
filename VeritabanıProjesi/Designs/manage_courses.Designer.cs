@@ -30,8 +30,8 @@ namespace VeritabanıProjesi
         private void InitializeComponent()
         {
             this.back_to_home = new System.Windows.Forms.Button();
-            this.dersprogrami = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dersprogrami)).BeginInit();
+            this.my_courses = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.my_courses)).BeginInit();
             this.SuspendLayout();
             // 
             // back_to_home
@@ -44,15 +44,15 @@ namespace VeritabanıProjesi
             this.back_to_home.UseVisualStyleBackColor = true;
             this.back_to_home.Click += new System.EventHandler(this.back_to_home_Click);
             // 
-            // dersprogrami
+            // my_courses
             // 
-            this.dersprogrami.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dersprogrami.Location = new System.Drawing.Point(51, 23);
-            this.dersprogrami.Name = "dersprogrami";
-            this.dersprogrami.RowHeadersWidth = 51;
-            this.dersprogrami.RowTemplate.Height = 29;
-            this.dersprogrami.Size = new System.Drawing.Size(699, 351);
-            this.dersprogrami.TabIndex = 2;
+            this.my_courses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.my_courses.Location = new System.Drawing.Point(51, 23);
+            this.my_courses.Name = "my_courses";
+            this.my_courses.RowHeadersWidth = 51;
+            this.my_courses.RowTemplate.Height = 29;
+            this.my_courses.Size = new System.Drawing.Size(699, 351);
+            this.my_courses.TabIndex = 2;
             // 
             // manage_courses
             // 
@@ -61,11 +61,11 @@ namespace VeritabanıProjesi
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.back_to_home);
-            this.Controls.Add(this.dersprogrami);
+            this.Controls.Add(this.my_courses);
             this.Name = "manage_courses";
             this.Text = "manage_courses";
             this.Load += new System.EventHandler(this.manage_courses_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dersprogrami)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.my_courses)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -73,6 +73,6 @@ namespace VeritabanıProjesi
         #endregion
 
         private System.Windows.Forms.Button back_to_home;
-        private System.Windows.Forms.DataGridView dersprogrami;
+        private System.Windows.Forms.DataGridView my_courses;
     }
 }

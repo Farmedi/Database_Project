@@ -21,12 +21,15 @@ namespace VeritabanıProjesi
             String str = "server = LAPTOP-1P0U4F0G; database=veritabanı_projesi;User Id=ftft;password=Hhft.1811asd159159159";
             SqlConnection con = new SqlConnection(str);
             con.Open();
-            SqlCommand cmd = new SqlCommand("list_courses_given", con);
-            cmd.CommandType = CommandType.StoredProcedure;
+            SqlCommand cmd = new SqlCommand("select fakulte,bolum,ders_adi,ders_tarihi from tbl_dersler where ogretmen_adi='"+Global.name+" "+Global.surname+"'", con);
+            
 
             SqlDataAdapter adp = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             adp.Fill(dt);
+            con.Close();
+            my_courses.DataSource = dt;
+            
 
         }
 

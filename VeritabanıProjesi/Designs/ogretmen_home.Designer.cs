@@ -34,11 +34,12 @@ namespace VeritabanıProjesi
             this.student_info = new System.Windows.Forms.Button();
             this.create_course = new System.Windows.Forms.Button();
             this.rtb_duyurular = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // create_announcement
             // 
-            this.create_announcement.Location = new System.Drawing.Point(67, 262);
+            this.create_announcement.Location = new System.Drawing.Point(69, 291);
             this.create_announcement.Name = "create_announcement";
             this.create_announcement.Size = new System.Drawing.Size(288, 65);
             this.create_announcement.TabIndex = 0;
@@ -48,7 +49,7 @@ namespace VeritabanıProjesi
             // 
             // course_management
             // 
-            this.course_management.Location = new System.Drawing.Point(421, 344);
+            this.course_management.Location = new System.Drawing.Point(423, 373);
             this.course_management.Name = "course_management";
             this.course_management.Size = new System.Drawing.Size(288, 65);
             this.course_management.TabIndex = 1;
@@ -58,7 +59,7 @@ namespace VeritabanıProjesi
             // 
             // student_info
             // 
-            this.student_info.Location = new System.Drawing.Point(67, 344);
+            this.student_info.Location = new System.Drawing.Point(69, 373);
             this.student_info.Name = "student_info";
             this.student_info.Size = new System.Drawing.Size(288, 65);
             this.student_info.TabIndex = 2;
@@ -68,7 +69,7 @@ namespace VeritabanıProjesi
             // 
             // create_course
             // 
-            this.create_course.Location = new System.Drawing.Point(421, 262);
+            this.create_course.Location = new System.Drawing.Point(423, 291);
             this.create_course.Name = "create_course";
             this.create_course.Size = new System.Drawing.Size(288, 65);
             this.create_course.TabIndex = 3;
@@ -79,12 +80,20 @@ namespace VeritabanıProjesi
             // rtb_duyurular
             // 
             this.rtb_duyurular.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.rtb_duyurular.Location = new System.Drawing.Point(67, 33);
+            this.rtb_duyurular.Location = new System.Drawing.Point(69, 62);
             this.rtb_duyurular.Name = "rtb_duyurular";
             this.rtb_duyurular.ReadOnly = true;
             this.rtb_duyurular.Size = new System.Drawing.Size(642, 196);
             this.rtb_duyurular.TabIndex = 4;
             this.rtb_duyurular.Text = "";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 20);
+            this.label1.TabIndex = 5;
             // 
             // ogretmen_home
             // 
@@ -92,6 +101,7 @@ namespace VeritabanıProjesi
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.rtb_duyurular);
             this.Controls.Add(this.create_course);
             this.Controls.Add(this.student_info);
@@ -101,6 +111,7 @@ namespace VeritabanıProjesi
             this.Text = "ogretmen_home";
             this.Load += new System.EventHandler(this.ogretmen_home_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -111,5 +122,6 @@ namespace VeritabanıProjesi
         private System.Windows.Forms.Button student_info;
         private System.Windows.Forms.Button create_course;
         private System.Windows.Forms.RichTextBox rtb_duyurular;
+        private System.Windows.Forms.Label label1;
     }
 }
