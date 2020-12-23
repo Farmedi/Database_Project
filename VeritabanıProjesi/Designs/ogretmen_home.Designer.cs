@@ -35,6 +35,7 @@ namespace VeritabanıProjesi
             this.create_course = new System.Windows.Forms.Button();
             this.rtb_duyurular = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.not_verme_sayfasi = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // create_announcement
@@ -95,12 +96,23 @@ namespace VeritabanıProjesi
             this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 5;
             // 
+            // not_verme_sayfasi
+            // 
+            this.not_verme_sayfasi.Location = new System.Drawing.Point(291, 12);
+            this.not_verme_sayfasi.Name = "not_verme_sayfasi";
+            this.not_verme_sayfasi.Size = new System.Drawing.Size(181, 47);
+            this.not_verme_sayfasi.TabIndex = 6;
+            this.not_verme_sayfasi.Text = "Grading";
+            this.not_verme_sayfasi.UseVisualStyleBackColor = true;
+            this.not_verme_sayfasi.Click += new System.EventHandler(this.not_verme_sayfasi_Click);
+            // 
             // ogretmen_home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.not_verme_sayfasi);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rtb_duyurular);
             this.Controls.Add(this.create_course);
@@ -123,5 +135,6 @@ namespace VeritabanıProjesi
         private System.Windows.Forms.Button create_course;
         private System.Windows.Forms.RichTextBox rtb_duyurular;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button not_verme_sayfasi;
     }
 }

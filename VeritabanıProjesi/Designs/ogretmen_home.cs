@@ -79,5 +79,12 @@ namespace VeritabanıProjesi
             manage_courses mc = new manage_courses();
             mc.ShowDialog();
         }
+
+        private void not_verme_sayfasi_Click(object sender, EventArgs e)
+        {
+           
+            not_verme_formu nvf = new not_verme_formu();
+            nvf.Show();
+        }
     }
 }

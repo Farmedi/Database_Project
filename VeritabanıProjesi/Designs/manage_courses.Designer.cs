@@ -52,12 +52,12 @@ namespace VeritabanıProjesi
             this.my_courses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.my_courses.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.delete_course});
-            this.my_courses.Location = new System.Drawing.Point(51, 23);
+            this.my_courses.Location = new System.Drawing.Point(1, 5);
             this.my_courses.Name = "my_courses";
             this.my_courses.ReadOnly = true;
             this.my_courses.RowHeadersWidth = 51;
             this.my_courses.RowTemplate.Height = 29;
-            this.my_courses.Size = new System.Drawing.Size(699, 351);
+            this.my_courses.Size = new System.Drawing.Size(797, 369);
             this.my_courses.TabIndex = 2;
             this.my_courses.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.my_courses_CellContentClick);
             this.my_courses.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.my_courses_CellContentDoubleClick);

@@ -129,20 +129,42 @@ namespace VeritabanıProjesi
 
         private void ders_secim_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+            
             int ders_id =Convert.ToInt32( ders_secim.Rows[e.RowIndex].Cells[4].Value);
 
             String str = "server = LAPTOP-1P0U4F0G; database=veritabanı_projesi;User Id=ftft;password=Hhft.1811asd159159159";
             SqlConnection con = new SqlConnection(str);
 
-            SqlCommand cmd = new SqlCommand("ders_programina_ekle", con);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@ogrenci_idd", SqlDbType.Int).Value=Global.ID;
-            cmd.Parameters.Add("@ders_idd",SqlDbType.Int).Value=ders_id;
+            SqlConnection conv = new SqlConnection(str);
+            
+            SqlCommand cmdv = new SqlCommand("select dbo.check_if_assigned('"+Global.ID+"','"+ders_id+"')  ", conv);
+            
+                conv.Open();
+                var validation = cmdv.ExecuteScalar();
+                conv.Close();
             
 
-            con.Open();
-            cmd.ExecuteNonQuery();
+            
+            if (Convert.ToInt32(validation) == 1)
+            {
+                MessageBox.Show("You are already assigned to this class!");
+
+            }
+            else if (Convert.ToInt32(validation) == 0)
+            {
+                SqlCommand cmd = new SqlCommand("ders_programina_ekle", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@ogrenci_idd", SqlDbType.Int).Value = Global.ID;
+                cmd.Parameters.Add("@ders_idd", SqlDbType.Int).Value = ders_id;
+
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+
+            }
+            
+
+            
 
             
 
