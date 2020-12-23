@@ -31,6 +31,7 @@ namespace VeritabanıProjesi
         {
             this.back_to_home = new System.Windows.Forms.Button();
             this.my_courses = new System.Windows.Forms.DataGridView();
+            this.delete_course = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.my_courses)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,13 +47,29 @@ namespace VeritabanıProjesi
             // 
             // my_courses
             // 
+            this.my_courses.AllowUserToAddRows = false;
+            this.my_courses.AllowUserToDeleteRows = false;
             this.my_courses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.my_courses.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.delete_course});
             this.my_courses.Location = new System.Drawing.Point(51, 23);
             this.my_courses.Name = "my_courses";
+            this.my_courses.ReadOnly = true;
             this.my_courses.RowHeadersWidth = 51;
             this.my_courses.RowTemplate.Height = 29;
             this.my_courses.Size = new System.Drawing.Size(699, 351);
             this.my_courses.TabIndex = 2;
+            this.my_courses.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.my_courses_CellContentClick);
+            this.my_courses.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.my_courses_CellContentDoubleClick);
+            // 
+            // delete_course
+            // 
+            this.delete_course.HeaderText = "Delete Course";
+            this.delete_course.MinimumWidth = 6;
+            this.delete_course.Name = "delete_course";
+            this.delete_course.ReadOnly = true;
+            this.delete_course.Text = "Delete";
+            this.delete_course.Width = 125;
             // 
             // manage_courses
             // 
@@ -74,5 +91,6 @@ namespace VeritabanıProjesi
 
         private System.Windows.Forms.Button back_to_home;
         private System.Windows.Forms.DataGridView my_courses;
+        private System.Windows.Forms.DataGridViewButtonColumn delete_course;
     }
 }
