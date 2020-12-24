@@ -30,8 +30,9 @@ namespace VeritabanıProjesi
         private void InitializeComponent()
         {
             this.dgw_dersler = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.Grading = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btn_return = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgw_dersler)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,12 +45,18 @@ namespace VeritabanıProjesi
             this.Grading});
             this.dgw_dersler.Location = new System.Drawing.Point(124, 23);
             this.dgw_dersler.Name = "dgw_dersler";
-            this.dgw_dersler.ReadOnly = true;
             this.dgw_dersler.RowHeadersWidth = 51;
             this.dgw_dersler.RowTemplate.Height = 29;
             this.dgw_dersler.Size = new System.Drawing.Size(550, 345);
             this.dgw_dersler.TabIndex = 0;
             this.dgw_dersler.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_dersler_CellContentDoubleClick);
+            // 
+            // Grading
+            // 
+            this.Grading.HeaderText = "Grading";
+            this.Grading.MinimumWidth = 6;
+            this.Grading.Name = "Grading";
+            this.Grading.Width = 125;
             // 
             // button1
             // 
@@ -61,19 +68,24 @@ namespace VeritabanıProjesi
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Grading
+            // btn_return
             // 
-            this.Grading.HeaderText = "Grading";
-            this.Grading.MinimumWidth = 6;
-            this.Grading.Name = "Grading";
-            this.Grading.ReadOnly = true;
-            this.Grading.Width = 125;
+            this.btn_return.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_return.Location = new System.Drawing.Point(48, 23);
+            this.btn_return.Name = "btn_return";
+            this.btn_return.Size = new System.Drawing.Size(80, 55);
+            this.btn_return.TabIndex = 2;
+            this.btn_return.Text = "<---";
+            this.btn_return.UseVisualStyleBackColor = true;
+            this.btn_return.Visible = false;
+            this.btn_return.Click += new System.EventHandler(this.btn_return_Click);
             // 
             // not_verme_formu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_return);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgw_dersler);
             this.Name = "not_verme_formu";
@@ -89,5 +101,6 @@ namespace VeritabanıProjesi
         private System.Windows.Forms.DataGridView dgw_dersler;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewButtonColumn Grading;
+        private System.Windows.Forms.Button btn_return;
     }
 }
