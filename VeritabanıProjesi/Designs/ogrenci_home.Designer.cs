@@ -34,6 +34,7 @@ namespace VeritabanıProjesi
             this.ogrenci_bilgileri = new System.Windows.Forms.Button();
             this.duyurular = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ders_programi
@@ -92,12 +93,23 @@ namespace VeritabanıProjesi
             this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 6;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(292, 31);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(218, 55);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "My Grades.";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ogrenci_home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.duyurular);
             this.Controls.Add(this.ogrenci_bilgileri);
@@ -118,5 +130,6 @@ namespace VeritabanıProjesi
         private System.Windows.Forms.Button ogrenci_bilgileri;
         private System.Windows.Forms.RichTextBox duyurular;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

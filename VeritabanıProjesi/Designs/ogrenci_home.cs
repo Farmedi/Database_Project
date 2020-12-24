@@ -64,5 +64,12 @@ namespace VeritabanıProjesi
             ogrenci_bilgileri obilgi = new ogrenci_bilgileri();
             obilgi.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            my_grades mg = new my_grades();
+            mg.ShowDialog();
+
+        }
     }
 }

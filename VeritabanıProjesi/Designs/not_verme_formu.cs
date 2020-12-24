@@ -71,7 +71,7 @@ namespace VeritabanıProjesi
             else if (Global.islem==1)
             {
                 try
-                {
+                {   
                     int not = Convert.ToInt32(dgw_dersler.Rows[e.RowIndex].Cells[4].Value);
 
                     String str = "server = LAPTOP-1P0U4F0G; database=veritabanı_projesi;User Id=ftft;password=Hhft.1811asd159159159";
