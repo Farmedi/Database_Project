@@ -45,9 +45,9 @@ namespace VeritabanıProjesi
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(55, 344);
+            this.button1.Location = new System.Drawing.Point(55, 253);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(648, 61);
+            this.button1.Size = new System.Drawing.Size(648, 63);
             this.button1.TabIndex = 1;
             this.button1.Text = "Go Back";
             this.button1.UseVisualStyleBackColor = true;
@@ -157,7 +157,7 @@ namespace VeritabanıProjesi
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(755, 481);
+            this.ClientSize = new System.Drawing.Size(755, 373);
             this.Controls.Add(this.lbl_on_create);
             this.Controls.Add(this.lbl_error);
             this.Controls.Add(this.button2);

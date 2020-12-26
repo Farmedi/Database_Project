@@ -25,8 +25,7 @@ namespace VeritabanıProjesi
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            var t = new Thread(() => Application.Run(new ogretmen_home()));
-            t.Start();
+            
 
         }
 

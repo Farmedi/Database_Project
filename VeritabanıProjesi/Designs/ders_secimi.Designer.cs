@@ -51,11 +51,11 @@ namespace VeritabanıProjesi
             this.ders_secim.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clm_add_class});
             this.ders_secim.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ders_secim.Location = new System.Drawing.Point(404, 107);
+            this.ders_secim.Location = new System.Drawing.Point(317, 107);
             this.ders_secim.Name = "ders_secim";
             this.ders_secim.RowHeadersWidth = 51;
             this.ders_secim.RowTemplate.Height = 29;
-            this.ders_secim.Size = new System.Drawing.Size(414, 353);
+            this.ders_secim.Size = new System.Drawing.Size(540, 353);
             this.ders_secim.TabIndex = 0;
             this.ders_secim.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ders_secim_CellContentClick);
             this.ders_secim.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ders_secim_CellDoubleClick);

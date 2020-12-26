@@ -151,5 +151,10 @@ namespace VeritabanıProjesi
             
             
         }
+
+        private void Giris_Yonlendirme_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

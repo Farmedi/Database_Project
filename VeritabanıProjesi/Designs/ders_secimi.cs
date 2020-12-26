@@ -82,17 +82,12 @@ namespace VeritabanıProjesi
             bolum_adlari.Clear();
 
 
-
-
-
             while (dr1.Read())
             {
                 bolum_adlari.Add(dr1[0].ToString());
             }
             dr1.Close();
             con.Close();
-
-
 
 
             bolum_adlari = bolum_adlari.Distinct().ToList();
@@ -112,7 +107,8 @@ namespace VeritabanıProjesi
         {
             String str = "server = LAPTOP-1P0U4F0G; database=veritabanı_projesi;User Id=ftft;password=Hhft.1811asd159159159";
             SqlConnection con = new SqlConnection(str);
-            string ders_getir = "select ders_adi as Class, ogretmen_adi as Lecturer, ders_tarihi as Day,id as ID from tbl_dersler where fakulte='" + cmb_faculty.SelectedItem.ToString() + "' and bolum='" + cmb_department.SelectedItem.ToString() + "'  ";
+            string ders_getir = "select ders_adi as Class, ogretmen_adi as Lecturer, ders_tarihi as Day,id as ID from tbl_dersler" +
+                " where fakulte='" + cmb_faculty.SelectedItem.ToString() + "' and bolum='" + cmb_department.SelectedItem.ToString() + "'  ";
             SqlCommand cmd = new SqlCommand(ders_getir, con);
 
             SqlDataAdapter adp = new SqlDataAdapter(cmd);

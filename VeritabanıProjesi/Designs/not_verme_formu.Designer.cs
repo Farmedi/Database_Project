@@ -47,7 +47,7 @@ namespace VeritabanıProjesi
             this.dgw_dersler.Name = "dgw_dersler";
             this.dgw_dersler.RowHeadersWidth = 51;
             this.dgw_dersler.RowTemplate.Height = 29;
-            this.dgw_dersler.Size = new System.Drawing.Size(550, 345);
+            this.dgw_dersler.Size = new System.Drawing.Size(802, 345);
             this.dgw_dersler.TabIndex = 0;
             this.dgw_dersler.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_dersler_CellContentDoubleClick);
             // 
@@ -60,7 +60,7 @@ namespace VeritabanıProjesi
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(285, 383);
+            this.button1.Location = new System.Drawing.Point(460, 388);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(211, 55);
             this.button1.TabIndex = 1;
@@ -84,7 +84,7 @@ namespace VeritabanıProjesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1071, 468);
             this.Controls.Add(this.btn_return);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgw_dersler);

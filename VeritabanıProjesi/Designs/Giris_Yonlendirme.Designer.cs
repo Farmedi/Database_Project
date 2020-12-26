@@ -165,6 +165,7 @@
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Name = "Giris_Yonlendirme";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Giris_Yonlendirme_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
